@@ -32,13 +32,17 @@ function foo(p1, p2)
 console.log(foo("syed","Raza"));
 
 //way to declare functions
-let foo = function (){
-    return "bar";
+
+let too = function (){
+    return "too function";
 }
-let foo = ()=>
+console.log(too());
+
+let doo = ()=>
 {
-return "bar"
+return "doo function"
 }
+console.log(doo());
 
 
 
