@@ -31,7 +31,14 @@ function foo(p1, p2)
 }
 console.log(foo("syed","Raza"));
 
-
+//way to declare functions
+let foo = function (){
+    return "bar";
+}
+let foo = ()=>
+{
+return "bar"
+}
 
 
 
