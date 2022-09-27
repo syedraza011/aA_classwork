@@ -44,7 +44,7 @@
 // }
 // console.log(doo());
 
-console.log(avg(2,4));
+/*console.log(avg(2,4));
 function avg(num1, num2)
 {
     let sum = (num1 + num2) / 2;
@@ -62,7 +62,7 @@ function sumNum (num1,num2){
     return sum;
 }
 
-/*
+
 // Write a function `isOdd` that takes in a number as an argument and returns `true`
 // if the number is odd and returns `false` otherwise.
 // Write two versions of this function, using conditionals and without using conditionals
@@ -192,14 +192,15 @@ function whisper(string)
 // isSubstring("Jump for joy", "joys"); // => false
 //
 var searchString="app Academy";
-var subString="academy";
-console
+var subString="app";
+console.log(isSubstring(searchString,subString));
 function isSubstring(searchString, subString) {
-    if()
-    {
-        return true;
+    if(searchString.indexOf(subString) > -1){
+        // if(searchString.indexOf(subString)>=0){
+            return true;
+        // }
     }
-    else{
+    else {
         return false;
     }
-  }
+}
