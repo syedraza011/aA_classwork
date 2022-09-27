@@ -1,55 +1,66 @@
-//////day _02 class work////
-/*if (!0)
+// //////day _02 class work////
+// if (!0)
+// {
+//     console.log("value is true ");
+
+// }
+// else{
+//     console.log("else: value is false");
+// }
+
+// let num=20;
+// if(num=30){
+// console.log("in the if");
+// }
+// else{
+//     console.log("in the else");
+// }
+// /*functions
+// dry code means don't repeat yourself
+// it is a procedure of code that will run when called*/
+// function foo()
+// {
+//     return 'bar';
+// }
+// console.log(foo()); // calling the value of funtion
+// console.log(foo); // calling what is it
+
+// function foo(p1, p2)
+// {
+//     return p1 + " "+p2;
+// }
+// console.log(foo("Mr","Raza"));
+
+// //way to declare functions
+
+// let too = function (){
+//     return "too function";
+// }
+// console.log(too());
+
+// let doo = ()=>
+// {
+// return "doo function"
+// }
+// console.log(doo());
+
+console.log(avg(2,4));
+function avg(num1, num2)
 {
-    console.log("if");
-
+    let sum = (num1 + num2) / 2;
+    return sum;
 }
-else{
-    console.log("else");
-}
-*/
-let num=20;
-if(num=30){
-console.log("in the if");
-}
-else{
-    console.log("in the else");
-}
-/*functions
-dry code means don't repeat yourself
-it is a procedure of code that will run when called*/
-function foo()
+//console.log(avg(3,4));
+console.log(avg(2,2));
+function avg1(num1,num2)
 {
-    return 'bar';
+    let sum= sumNum(2,2);
+    return avg=sumNum/2;
 }
-console.log(foo()); // calling the value of funtion
-console.log(foo); // calling what is it
-
-function foo(p1, p2)
-{
-    return p1 + " "+p2;
+function sumNum (num1,num2){
+    let sum= num1+num2;
+    return sum;
 }
-console.log(foo("syed","Raza"));
-
-//way to declare functions
-
-let too = function (){
-    return "too function";
-}
-console.log(too());
-
-let doo = ()=>
-{
-return "doo function"
-}
-console.log(doo());
-
-
-
-
-
-
-
 
 /*
 // Write a function `isOdd` that takes in a number as an argument and returns `true`
@@ -170,3 +181,25 @@ function whisper(string)
     return str;
 }
 */
+// Write a function `isSubstring` that takes in two strings, `searchString` and
+// `subString`. The function should return `true` if `subString` is a part of the
+// `searchString`, `false` otherwise.
+// Write two versions of this function, using conditionals and without using conditionals
+//
+// Examples:
+// isSubstring("The cat went to the store", "he cat went"); // => true
+// isSubstring("Time to program", "time"); // => true
+// isSubstring("Jump for joy", "joys"); // => false
+//
+var searchString="app Academy";
+var subString="academy";
+console
+function isSubstring(searchString, subString) {
+    if()
+    {
+        return true;
+    }
+    else{
+        return false;
+    }
+  }
