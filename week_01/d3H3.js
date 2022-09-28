@@ -75,3 +75,35 @@ function logBetweenStepper(min, max, step){
     
     
 }
+
+//3
+// Write a function `printFives(max)` that prints out the multiples of 5 that are
+// less than max.
+//
+// Try to solve this in two ways, using a conditional (if) and without using a
+// conditional
+//
+// Example:
+//
+// printFives(20) // prints
+// 0
+// 5
+// 10
+// 15
+let max=20;
+let i=0;
+let j=0;
+(printFives(max));
+function printFives(max){
+    for(i=0 ;i<max;i=i+5){
+        console.log(i);
+    }
+    //2nd method
+    while(j<max){
+        if(j%5===0){
+        console.log(j);
+        }
+    j++;
+    }
+    
+}
