@@ -1,4 +1,4 @@
-//1
+/*//1
 // Define a function `logBetween(lowNum, highNum)` that will print every number
 // from `lowNum` to `highNum`, inclusive. Inclusive means that the range includes
 // `lowNum` and `highNum`. Hint: this function only needs to print using `console.log`,
@@ -209,7 +209,7 @@ function fizzBuzz(max){
         }
     }
 }
-
+*/
 //8
 // Define a function `isPrime(number)` that returns `true` if `number` is prime.
 // Otherwise, false. Assume `number` is a positive integer.
