@@ -47,7 +47,7 @@ while(false){
 console.log(k);
 }*/
 // funtion to skip number 5
-console.log("FUntion Skip 5");
+/*console.log("FUntion Skip 5");
 skipFive(20);
 function skipFive(num){
     for (let i=1;i<=num; i++){
@@ -57,3 +57,17 @@ function skipFive(num){
         console.log(i);
     }
 }
+*/
+console.log("Break at 5");
+breakAtFive(20);
+function breakAtFive(num){
+    for (let i=1;i<=num; i++){
+        if(i===5){
+        break; //this would get us out of the loop
+        }
+        console.log(i);
+    }
+}
+
+
+
