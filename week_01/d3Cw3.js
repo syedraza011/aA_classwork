@@ -58,15 +58,35 @@ function skipFive(num){
     }
 }
 */
-console.log("Break at 5");
+/*console.log("Break at 5");
 breakAtFive(20);
 function breakAtFive(num){
-    for (let i=1;i<=num; i++){
-        if(i===5){
-        break; //this would get us out of the loop
+    for (let i = 1;i <= num; i++){
+        if(i === 5){
+            break; //this would get us out of the loop
         }
         console.log(i);
     }
+}
+*/
+console.log("if the number is prime");
+console.log(isPrime(20));
+function isPrime(num){
+    if(num < 2)
+    {
+        console.log("Not a prime number");
+    }
+    else{
+        for (let i=2; i<=num;i++){
+            if(num%i==0){
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+}
 }
 
 
