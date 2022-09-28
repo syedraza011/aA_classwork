@@ -195,3 +195,12 @@ function averageOfFour(num1, num2, num3, num4){
     avg=(num11+num12+num13+num14)/4;
     return avg;
 }
+
+//11
+
+function sayHello(name) {
+    var msg = 'Hello, ' + name + '. How are you?';
+    return msg;
+  }
+  
+  console.log(sayHello('Class bootcamp prep')); // feel free to change the string being passed
