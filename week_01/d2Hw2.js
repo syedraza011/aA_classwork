@@ -139,6 +139,8 @@ function isSubstring(searchString, subString) {
     else {
         return false;
     }
+    //2nd method
+    // {return searchstring.indexOf(substring)>-1};
 }
 //8
 

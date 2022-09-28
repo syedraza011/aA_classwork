@@ -231,8 +231,8 @@ function isPrime(number){
     {
         for(let j=2; j<=number; j=j+1){
             if(number% j===0){
-                return false;
-            }
+            return false;
+        }
             else{
                 return true;
             }
