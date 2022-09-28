@@ -215,15 +215,15 @@ function checkNumber(num) {
     }
 }
   console.log(checkNumber(-5)); // feel free to change the number being passed
-  
+
 //13
-  1 + 1 * 5
+console.log(1 + 1 * 5)
 
-(1 + 1) * 5
+console.log((1 + 1) * 5)
 
-1 + 2 - 5 / 6 - 1
+//1 + 2 - 5 / 6 - 1
 
-5 * 5 % 13
+//5 * 5 % 13
 
-5/(-1 * (5 - (-10)))
+//5/(-1 * (5 - (-10)))
 
