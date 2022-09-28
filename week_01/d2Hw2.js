@@ -195,7 +195,7 @@ function averageOfFour(num1, num2, num3, num4){
     avg=(num11+num12+num13+num14)/4;
     return avg;
 }
-
+console.log("function Muscle Memory");
 //11
 
 function sayHello(name) {
@@ -204,3 +204,26 @@ function sayHello(name) {
   }
   
   console.log(sayHello('Class bootcamp prep')); // feel free to change the string being passed
+//12
+function checkNumber(num) {
+    if (num > 0) {
+    return 'positive';
+    } else if (num < 0) {
+    return 'negative';
+    } else {
+    return 'zero';
+    }
+}
+  console.log(checkNumber(-5)); // feel free to change the number being passed
+  
+//13
+  1 + 1 * 5
+
+(1 + 1) * 5
+
+1 + 2 - 5 / 6 - 1
+
+5 * 5 % 13
+
+5/(-1 * (5 - (-10)))
+
