@@ -29,4 +29,31 @@ function printRang(nStrt,nEnd){
         i++;
     }
 }
+//infinite loop
+/*let i=20;
+while(i === 20){
+console.log(i);
+}
+*/
+//
 
+/*let j=20;
+while(true){
+console.log(j);
+}
+
+let k=20;
+while(false){
+console.log(k);
+}*/
+// funtion to skip number 5
+console.log("FUntion Skip 5");
+skipFive(20);
+function skipFive(num){
+    for (let i=1;i<=num; i++){
+        if(i===5){
+        continue; // takes back to loop once this is true;
+        }
+        console.log(i);
+    }
+}
