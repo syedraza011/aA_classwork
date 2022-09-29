@@ -42,4 +42,13 @@ console.log(fruits.includes("watermelon")); //returns false;
 console.log("Mutating methods");
 fruits.push("water mellon"); // adds to end of the array
 console.log(fruits); // [ 'Apple', 'Orange', 'peer', 'water mellon' ]
-
+fruits.pop(); // it pops the last value
+console.log(fruits); // [ 'Apple', 'Orange', 'peer' ]
+fruits.unshift("melon"); // it puts the index value upfront
+console.log(fruits);
+fruits.unshift();
+console.log(fruits);
+console.log("Non mutation method");
+let numbers=[1,2,3];
+console.log(fruits.concat(numbers));
+console.log(fruits);
