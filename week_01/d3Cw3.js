@@ -70,23 +70,31 @@ function breakAtFive(num){
 }
 */
 console.log("if the number is prime");
-console.log(isPrime(20));
+console.log(isPrime(7));
+console.log("if the 2nd number is prime");
+console.log(isPrime(9));
+console.log("if the 3rd number is prime");
+console.log(isPrime(15));
 function isPrime(num){
     if(num < 2)
     {
         console.log("Not a prime number");
     }
     else{
-        for (let i=2; i<=num;i++){
-            if(num%i==0){
-            return false;
+        for (let i=2; i<num;i++){
+            if(num % i === 0){
+                return false;
+                //break;
+                //console.log("number is not prime");
+                //break;
+            }
         }
-        else
-        {
-            return true;
-        }
+        
+        // console.log("number is prime");
+        return true;
+        //break;
+            
     }
-}
 }
 
 
