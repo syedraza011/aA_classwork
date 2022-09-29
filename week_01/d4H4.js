@@ -82,7 +82,7 @@ console.log("Write a function `wordPeriods(sentence)` that takes in a sentence a
 //
 // wordPeriods('hello world'); // => 'hello. world.'
 // wordPeriods('what is the weather today'); // => 'what. is. the. weather. today.'
-let sentence='hello world';
+let sentence='what is the weather today';
 console.log(wordPeriods(sentence));
 function wordPeriods(sentence){
     let array =sentence.split(" ");
@@ -91,4 +91,27 @@ function wordPeriods(sentence){
     }
     array=array.join(" ");
     return array;
+}
+//6 
+console.log(" Write a function `maxValue(array)` that returns the largest value in `array`.Assume `array` is an array of numbers.")
+//
+// Examples:
+//
+// maxValue([12, 6, 43, 2]); // => 43
+// maxValue([]); // => null
+// maxValue([-4, -10, 0.43]); // => 0.43
+let myArray =[122,6,43,2222];
+
+console.log(maxValue(myArray));
+function maxValue(myArray){
+    let max=0;
+for(let i=0;i<myArray.length;i++)
+{
+    
+    if(max< myArray[i])
+    {
+        max=myArray[i];
+    }
+}
+return max;
 }
