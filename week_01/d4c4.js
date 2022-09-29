@@ -70,11 +70,9 @@ console.log("looping through an array");
 
 for (let i=0;i< numbers.length;i++)
 {
-    let ele=numbers[i];
-    console.log(ele);
+    console.log(numbers[i]);
 }
 console.log("Backwards Printing an array")
-for (let i=numbers.length-1;i> 0;i--)
-{
+for (let i=numbers.length-1;i> 0;i--){
     console.log(numbers[i]);
 }

@@ -82,13 +82,13 @@ console.log("Write a function `wordPeriods(sentence)` that takes in a sentence a
 //
 // wordPeriods('hello world'); // => 'hello. world.'
 // wordPeriods('what is the weather today'); // => 'what. is. the. weather. today.'
-let sentence=['hello world'];
+let sentence='hello world';
 console.log(wordPeriods(sentence));
 function wordPeriods(sentence){
-    
-    for(let i = 0; i < sentence.length; i++){
-        sentence[i]=sentence[i]+'.';
-        //console.log(sentence[i]);
+    let array =sentence.split(" ");
+    for(let i = 0; i < array.length; i++){
+        array[i] =array[i] + ".";
     }
-    return sentence;
+    array=array.join(" ");
+    return array;
 }
