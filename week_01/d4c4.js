@@ -61,3 +61,8 @@ console.log(numbers.slice(0,2));// start is inlcusive and end is exclusive
 //console.log(numbers);
 console.log(numbers.slice(0,5));
 console.log(numbers.slice(2,7));
+let string="hi my name is Xandor";
+console.log(string);
+console.log(string.split(" ")); // puts string in an array
+console.log(string); //prints origonal
+console.log(numbers.join("___"));// adds this to array 
