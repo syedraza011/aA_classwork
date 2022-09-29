@@ -34,3 +34,12 @@ console.log(arr);
 console.log(arr[0]);
 console.log(arr[6]);
 console.log(arr[6][1]);// first key in to main arary then we get into the sub array
+console.log("arrays methods")
+const fruits = ["Apple", "Orange","peer"];
+console.log(fruits.length); //3 lenght
+console.log(fruits.indexOf("peer")); //2 index
+console.log(fruits.includes("watermelon")); //returns false;
+console.log("Mutating methods");
+fruits.push("water mellon"); // adds to end of the array
+console.log(fruits); // [ 'Apple', 'Orange', 'peer', 'water mellon' ]
+
