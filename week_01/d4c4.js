@@ -49,6 +49,15 @@ console.log(fruits);
 fruits.unshift();
 console.log(fruits);
 console.log("Non mutation method");
-let numbers=[1,2,3];
-console.log(fruits.concat(numbers));
-console.log(fruits);
+let numbers=[1,2,3,4,20,47,56,10021];
+console.log(fruits.concat(numbers)); // just puts togather arrays but does not update [ 'melon', 'Apple', 'Orange', 'peer', 1, 2, 3 ]
+console.log(fruits); // prints origonal array here
+
+console.log(numbers.slice()); // does not change anything
+//console.log(numbers);
+console.log(numbers.slice(1)); // does removes index 1 , so [2,3] output
+//console.log(numbers);
+console.log(numbers.slice(0,2));// start is inlcusive and end is exclusive
+//console.log(numbers);
+console.log(numbers.slice(0,5));
+console.log(numbers.slice(2,7));
