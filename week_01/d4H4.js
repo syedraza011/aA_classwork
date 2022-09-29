@@ -23,11 +23,18 @@ console.log(" Write a function range(start, end) that returns an array that cont
 //
 // range(1,4) => [1,2,3,4]
 // range(4,2) => []
+let arry=[];
 let start=10;
 let end=15;
-range(start, end);
+//range(start, end);
+console.log(range(start, end));
 function range(start, end){
 for(let i=start; i<=end;i++){
-    console.log(i);
+    arry.push(i);
+    //console.log(i);
 }
+return arry;
+
 }
+
+//3
