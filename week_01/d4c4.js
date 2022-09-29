@@ -65,4 +65,16 @@ let string="hi my name is Xandor";
 console.log(string);
 console.log(string.split(" ")); // puts string in an array
 console.log(string); //prints origonal
-console.log(numbers.join("___"));// adds this to array 
+console.log(numbers.join("___"));// adds this to array or joins the elements in an array
+console.log("looping through an array");
+
+for (let i=0;i< numbers.length;i++)
+{
+    let ele=numbers[i];
+    console.log(ele);
+}
+console.log("Backwards Printing an array")
+for (let i=numbers.length-1;i> 0;i--)
+{
+    console.log(numbers[i]);
+}
