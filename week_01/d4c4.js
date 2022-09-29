@@ -28,7 +28,8 @@ stra[0]='x'; // because strings are immuteable taht why we are not able to mutat
 console.log(stra);
 arr[0]='x';
 console.log(arr); // we got xat output since we can change arrays. elemets can be anything.
-arr=['hi',10,9,true,undefined,null,[1,2]];
+arr=['hi',10,9,true,undefined,null,[1,2]]; // we put quotation marks becuase hi is not a reserve word
+
 console.log(arr);
 console.log(arr[0]);
 console.log(arr[6]);
