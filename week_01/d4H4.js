@@ -74,3 +74,21 @@ function capWords(words){
     }
     return words;
 }
+//5
+
+console.log("Write a function `wordPeriods(sentence)` that takes in a sentence and returns a newsentence where every word has period after it.")
+//
+// Examples:
+//
+// wordPeriods('hello world'); // => 'hello. world.'
+// wordPeriods('what is the weather today'); // => 'what. is. the. weather. today.'
+let sentence=['hello world'];
+console.log(wordPeriods(sentence));
+function wordPeriods(sentence){
+    
+    for(let i = 0; i < sentence.length; i++){
+        sentence[i]=sentence[i]+'.';
+        //console.log(sentence[i]);
+    }
+    return sentence;
+}
