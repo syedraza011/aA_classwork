@@ -13,8 +13,7 @@ let array=[];
 console.log(range(start, end));
 
 function range(start, end) {
-  
-for(let i=start;i<=end;i++){
+  for(let i=start;i<=end;i++){
 array[i-1]=i;
 }
 return array;

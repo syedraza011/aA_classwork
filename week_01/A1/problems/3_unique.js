@@ -15,17 +15,12 @@ function unique(array) {
   
   for(let i=0;i<array.length;i++)
   {
-    
     if(narray[i] !== array[i]){
-        narray[i]=narray[i].push()
-        
-        console.log("inside if")
-        //console.log(num)
-        //console.log(array);
-       
+        narray.push(array[i])
+        //console.log("inside if")
       }
       else {
-        //narray.push(num);
+        
       }
   }
   return narray;
