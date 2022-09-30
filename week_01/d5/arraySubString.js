@@ -9,3 +9,18 @@
 // => [true, false, true, true]
 // arraySubstring(["prefix", "problems", "pragmatic", "prefer"], "pre")
 // => [true, false, false, true]
+let words=["hello", "history", "helix", "hellos"]
+let str="hel";
+console.log(arraySubstring(words, str));
+function arraySubstring(words, str){
+    let arr = [];
+    for(let i=0;i<words.length;i++){
+        if(words[i].includes(str)){
+        //console.log(i)
+            arr.push(true); 
+        } else {
+            arr.push(false);
+        }
+    }
+    return arr;
+}
