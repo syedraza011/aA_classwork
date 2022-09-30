@@ -115,3 +115,55 @@ for(let i=0;i<myArray.length;i++)
 }
 return max;
 }
+//7
+
+
+console.log(" Write a function `myIndexOf(array, target)` that takes in an array of numbers and a target number as arguments.");
+console.log(" It should return the index value of the target if it is present in the array or -1 if it is not present.");
+//
+// CONSTRAINT: Do not use the indexOf method.
+//
+// Examples:
+//
+// myIndexOf([1,2,3,4],4) => 3
+// myIndexOf([5,6,7,8],2) => -1
+let nArray=[1,2,3,4,5];
+let target=4 ;
+console.log(myIndexOf(nArray, target));
+function myIndexOf(nAarray, target){
+    
+for(let i=0;i<nArray.length;i++)
+{
+    if(nArray[i]===target)
+    {
+        console.log(nAarray);
+        return nArray.indexOf(nAarray[i]);
+    }
+}
+return -1;
+}
+
+//8
+console.log(" Write a function `factorArray(array, number)` that takes in an array of")
+console.log("numbers and a number and returns an array of all the factors.")
+//
+// Examples:
+//
+// factorArray([2,3,4,5,6],20) => [2,4,5]
+// factorArray([2,3,4,5,6],35) => [5]
+// factorArray([10,15,20,25],5) => []
+let factorNumber=20;
+let factorAarray=[2,3,4,5,6];
+let newFactorArray=[];
+console.log(factorArray(factorAarray,factorNumber));
+function factorArray(factorAarray, factorNumber){
+
+for(let i=0; i<factorAarray.length;i++){
+    if(factorNumber % factorAarray[i] === 0)
+    {
+        //console.log(i);
+    newFactorArray.push(factorAarray[i]);
+    }
+}  
+return newFactorArray;  
+}
