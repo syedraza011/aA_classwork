@@ -9,15 +9,18 @@ reverseSentence("Jump, jump for joy") => "joy for jump Jump,"
 *******************************************************************************/
 let sentence="Go to the store";
 let nSentence=[];
-reverseSentence(sentence);
+let str;
+console.log(reverseSentence(sentence));
 function reverseSentence(sentence) {
 nSentence=sentence.split(" ");
   //console.log(sentence);
-  for(let i=nSentence.length;i>=0;i--){
-    console.log(nSentence[i]);
+  for(let i=(nSentence.length-1);i>=0;i--){
+    str=str +" " + nSentence[i];
+    
   }
-
+return str;
 }
+
 ///done////
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = reverseSentence;

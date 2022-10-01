@@ -14,7 +14,7 @@ let step=5;
 let str="";
 console.log(stringRange(min, max, step));
 function stringRange(min, max, step) {
- for(let i=3;i<max;i=i+step){
+ for(let i=min;i<max;i=i+step){
   str=str + ""+ i ;
   //console.log(i);
  }

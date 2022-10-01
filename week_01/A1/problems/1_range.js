@@ -13,10 +13,15 @@ let array=[];
 console.log(range(start, end));
 
 function range(start, end) {
+if((end-start)===0){
+  return array;
+}
+else{
   for(let i=start;i<=end;i++){
-array[i-1]=i;
+array.push(array[i]);
 }
 return array;
+}
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
