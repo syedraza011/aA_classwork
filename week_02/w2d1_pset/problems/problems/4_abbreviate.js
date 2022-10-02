@@ -13,10 +13,28 @@ abbreviate('programming is fantastic'); // => 'prgrmmng is fntstc'
 abbreviate('hello world'); // => 'hll wrld'
 abbreviate('how are you'); // => 'how are you'
 ***********************************************************************/
-
+let sentence='bootcamp prep is fun';
+let arr=[];
+let word;
+console.log(abbreviate(sentence));
 function abbreviate(sentence) {
-
+arr= sentence.split(" ");
+console.log("")
+for(let i=0;i<arr.length;i++)
+{
+    word = arr[i]. split(" "). length;
+    console.log(word);
+    if(word > 4){
+        if(word==='a' || word==='e' || word==='i'|| word==='o'|| word==='u'){
+            arr[i].pop();
+        }
+    }
 }
+
+console.log(arr);
+return arr;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = abbreviate;
