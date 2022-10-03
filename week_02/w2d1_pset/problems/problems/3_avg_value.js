@@ -21,3 +21,5 @@ function avgValue(array) {
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = avgValue;
+
+//done

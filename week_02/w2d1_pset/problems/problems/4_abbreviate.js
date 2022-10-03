@@ -14,28 +14,43 @@ abbreviate('hello world'); // => 'hll wrld'
 abbreviate('how are you'); // => 'how are you'
 ***********************************************************************/
 let sentence='bootcamp prep is fun';
-let arr=[];
+let char=[];
+let arra=[];
 let word;
+let newWord;
 console.log(abbreviate(sentence));
 function abbreviate(sentence) {
-arr= sentence.split(" ");
-console.log("")
-for(let i=0;i<arr.length;i++)
-{
-    word = arr[i]. split(" "). length;
-    console.log(word);
-    if(word > 4){
-        
-        if(arr[i]==='a' || arr[i]==='e' || arr[i]==='i'|| arr[i]==='o'|| arr[i]==='u'){
-            arr[i].pop();
+    char=sentence.split(" ");
+    console.log("Just printing after making an aray ->"+char);
+    for(i=0;i<char.length;i++){
+        if(char[i].length>4 && char[i].split('') !=='o' ){  
+            console.log("")
+        arra.push(char[i].split(''));
         }
+        
     }
-    arr.push(arr[i]);
+    return arra;
+
 }
 
-console.log(arr);
-return arr;
+//console.log("New Array after push -->" + arra);
+/*for(let i=0;i<arr.length;i++)
+{
+    word = arr[i]. split(" ");
+    console.log("word ="+ word);
+    newWord=word[i].split("").length;
+    console.log("New word "+ newWord);
+    if(word > 4 && arr[i]==='a' || arr[i]==='e' || arr[i]==='i'|| arr[i]==='o'|| arr[i]==='u'){
+            arr[i].pop();
+        
+    }
+    arra.push(arr[i]);
 }
+|| char[i].split('')!=='e' 
+    || char[i].split('')!='i'|| char[i].split('')!=='o'|| 
+        char[i].split('') !=='u'){
+console.log(arra);
+*/
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
