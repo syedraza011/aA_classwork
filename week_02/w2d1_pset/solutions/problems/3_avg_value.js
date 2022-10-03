@@ -8,18 +8,18 @@ avgValue([10, 20]); // => 15
 avgValue([2, 3, 7]); // => 4
 avgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
-array=[100,60,64];
-console.log(avgValue(array));
+
 function avgValue(array) {
-    let sum = 0;
-    for(i = 0;i < array.length;i++){
-        sum=sum + array[i];
-        console.log(sum);
-    }
-    return sum / array.length;
+  var total = 0;
+
+  for (var i = 0; i < array.length; i += 1) {
+    var num = array[i];
+    total += num;
+  }
+
+  var avg = total / array.length;
+  return avg;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = avgValue;
-
-//done

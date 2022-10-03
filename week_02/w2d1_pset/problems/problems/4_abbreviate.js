@@ -14,16 +14,38 @@ abbreviate('hello world'); // => 'hll wrld'
 abbreviate('how are you'); // => 'how are you'
 ***********************************************************************/
 let sentence='bootcamp prep is fun';
-let char=[];
-let arra=[];
-let narr=[];
-let str;
-let word;
-let newWord;
+
+// let arra=[];
+// let narr=[];
+// let str;
+// let word;
+// let newWord;
+function removeVowels(word){
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let str = '';
+    for(let i = 0; i < word.length; i++){
+        if(vowels.indexOf(word[i]) === -1){
+            str += word[i];
+        }
+    }
+    return str;
+    
+}
 console.log(abbreviate(sentence));
 function abbreviate(sentence) {
-    char=sentence.split(" ");
-    console.log("Just printing after making an aray ->"+char);
+    let newArray = [];
+    let words = sentence.split(" ");
+    for(let i = 0; i < words.length; i++){
+        if(words[i].length > 4){
+            let newWord = removeVowels(words[i]);
+            newArray.push(newWord);
+        } else {
+            newArray.push(words[i]);
+        }
+    } 
+    return  newArray.join(" ");
+}
+    /*console.log("Just printing after making an aray ->"+char);
     for(i=0;i<char.length;i++){
 
         narr.push(char[i].split(""));
@@ -35,11 +57,14 @@ function abbreviate(sentence) {
         {
             arra.push(char[i])
         }
-        if(char[i].split("") ==='o' && char[i].length>4 ){  
+        for(let j=0;j<narr[i].length;j++ ){
+            if(char[i].split("") ==='o' && char[i].length>4 ){  
+            console.log("Hello in for and if")
+            }
             console.log("printing lenght of word-->"+char[i].length)
             console.log("printing lenght of char.split-->"+char[i].split(""))
-        char[i].pop();
-        console.log("printing lenght of char after pop-->"+char)
+           // char.pop();
+            console.log("printing lenght of char after pop-->"+char)
         }
         
     }
