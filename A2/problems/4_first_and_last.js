@@ -18,11 +18,16 @@ firstAndLast([12, 5]); // => 17
 firstAndLast([12]); // => 0
 firstAndLast([7, 11, 3]); // => 4
 *******************************************************************************/
-
+let array=[1, 2, 3, 4, 5];
+console.log(firstAndLast(array));
 function firstAndLast(array) {
-  // your code here...
-
+  if(array.length % 2 === 0){
+    let sum=array[0]+array[array.length-1];
+    return sum;
+  } else {
+    let sub= array[0]-array[array.length-1];
+    return sub;
+  }
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = firstAndLast;
