@@ -9,19 +9,15 @@ range(4,2) => []
 *******************************************************************************/
 let start=1;
 let end=4;
-let array=[];
-console.log(range(start, end));
 
+console.log(range(start, end));
+console.log(range(start, end));
 function range(start, end) {
-if((end-start)===0){
-  return array;
-}
-else{
+  let array=[];
   for(let i=start;i<=end;i++){
-array.push(array[i]);
-}
-return array;
-}
+    array.push(i);
+  }
+  return array;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

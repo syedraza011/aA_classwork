@@ -8,17 +8,17 @@ reverseSentence("Go to the store") => "store the to Go"
 reverseSentence("Jump, jump for joy") => "joy for jump Jump,"
 *******************************************************************************/
 let sentence="Go to the store";
-let nSentence=[];
-let str;
+
 console.log(reverseSentence(sentence));
 function reverseSentence(sentence) {
-nSentence=sentence.split(" ");
-  //console.log(sentence);
-  for(let i=(nSentence.length-1);i>=0;i--){
-    str=str +" " + nSentence[i];
-    
-  }
-return str;
+  //let nSentence=[];
+  let array=[];
+  let words=sentence.split(" ");
+    //console.log(sentence);
+    for(let i = (words.length-1); i >= 0; i--){
+      array.push(words[i]);
+    }
+  return array.join(' ');
 }
 
 ///done////

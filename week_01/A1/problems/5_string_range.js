@@ -11,14 +11,14 @@ stringRange(3, 20, 5) => '381318'
 let min=3;
 let max=20;
 let step=5;
-let str="";
 console.log(stringRange(min, max, step));
 function stringRange(min, max, step) {
- for(let i=min;i<max;i=i+step){
-  str=str + ""+ i ;
-  //console.log(i);
- }
-return str;
+    let str = "";
+    for(let i = min;i <= max;i += step){
+        str = str+i ;
+    //console.log(i);
+    }
+    return str;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
