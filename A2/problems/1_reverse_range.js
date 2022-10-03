@@ -8,9 +8,15 @@ Examples:
 reverseRange(2,7) => [6, 5, 4, 3]
 reverseRange(4,2) => []
 *******************************************************************************/
-
+let start=2;
+let end=7;
+console.log(reverseRange(start, end));
 function reverseRange(start, end) {
-  // your code here...
+  let array=[];
+  for(let i=end-1;i > start; i--){
+    array.push(i);
+  }
+  return array;
 
 }
 

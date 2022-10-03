@@ -9,9 +9,17 @@ isPrime(2); // => true
 isPrime(11); // => true
 isPrime(15); // => false
 *******************************************************************************/
-
+let number=11;
+console.log(isPrime(number));
 function isPrime(number) {
-  // your code here...
+  if(number < 2){
+    return false;
+  }
+  for(let i=2;i < number;i++){
+    if(number % i === 0){
+      return false;
+    }
+  } return true;
 
 }
 
