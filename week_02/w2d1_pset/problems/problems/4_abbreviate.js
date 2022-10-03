@@ -25,10 +25,12 @@ for(let i=0;i<arr.length;i++)
     word = arr[i]. split(" "). length;
     console.log(word);
     if(word > 4){
-        if(word==='a' || word==='e' || word==='i'|| word==='o'|| word==='u'){
+        
+        if(arr[i]==='a' || arr[i]==='e' || arr[i]==='i'|| arr[i]==='o'|| arr[i]==='u'){
             arr[i].pop();
         }
     }
+    arr.push(arr[i]);
 }
 
 console.log(arr);
