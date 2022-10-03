@@ -16,6 +16,8 @@ abbreviate('how are you'); // => 'how are you'
 let sentence='bootcamp prep is fun';
 let char=[];
 let arra=[];
+let narr=[];
+let str;
 let word;
 let newWord;
 console.log(abbreviate(sentence));
@@ -23,13 +25,27 @@ function abbreviate(sentence) {
     char=sentence.split(" ");
     console.log("Just printing after making an aray ->"+char);
     for(i=0;i<char.length;i++){
-        if(char[i].length>4 && char[i].split('') !=='o' ){  
-            console.log("")
-        arra.push(char[i].split(''));
+
+        narr.push(char[i].split(""));
+    }
+    console.log("Just printing new array after push->"+narr);
+    for(i=0;i<char.length;i++){
+
+        if(char[i].length<4 )
+        {
+            arra.push(char[i])
+        }
+        if(char[i].split("") ==='o' && char[i].length>4 ){  
+            console.log("printing lenght of word-->"+char[i].length)
+            console.log("printing lenght of char.split-->"+char[i].split(""))
+        char[i].pop();
+        console.log("printing lenght of char after pop-->"+char)
         }
         
     }
-    return arra;
+    console.log("New array "+ arra)
+    str=str+" "+arra;
+    return str;
 
 }
 
