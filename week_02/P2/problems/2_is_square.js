@@ -14,10 +14,17 @@ isSquare(36) => true
 isSquare(9) => true
 isSquare(16) => true
 *******************************************************************************/
-
+let number=25;
+console.log(number+" ->"+ "Is a perfect square"+isSquare(number));
 function isSquare(number) {
-  // your code here...
-}
+  for(let i=1; i<number; i++){
+    if(i*i===number){
+      return true;
+    }
+  }
+return false;
+  }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = isSquare;
