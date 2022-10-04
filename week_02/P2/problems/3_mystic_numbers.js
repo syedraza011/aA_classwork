@@ -12,11 +12,13 @@ let max=25;
 console.log(mysticNumbers(max));
 function mysticNumbers(max) {
   let array=[];
-for(let i=0;i<max;i++){
-  if(i % 4 === 0 && i % 6 !== 0 || i % 6 === 0 && i % 4 !== 0 ){
-
+for(let i = max; i > 0; i--){
+  if(i % 4 === 0 && i % 6 != 0 || i % 6 === 0 && i % 4 != 0 ){
+    array.push(i);
+    console.log(array);
   }
 }
+return array;
 
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

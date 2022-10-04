@@ -12,9 +12,16 @@ Examples:
 firstOrLast(['a', 'b', 'c', 'd']) => 'a'
 firstOrLast(['Jenny', 'Mary', 'Mark']) => 'Mark'
 *******************************************************************************/
-
+let array=['a', 'b', 'c','d'];
+console.log(firstOrLast(array))
 function firstOrLast(array) {
-  // your code here...
+if(array.length % 2 ===0){
+  //console.log(array[0])
+  return array[0];
+}
+else {
+  return array[array.length-1];
+}
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
