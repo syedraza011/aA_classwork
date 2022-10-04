@@ -38,14 +38,14 @@ function catBuilder(name,color,toys){
 //lalogetSum(10)=2,3,5,6=17
 //laligetSum(17) 2,3,5,7,11,13,17
 //isprime function
-laligetSum(10);
-laligetSum(17);
+console.log("Prime sum "+" "+laligetSum(10));
+console.log(laligetSum(17));
 function isprime(num){
   if(num<2){
   return false;
   }
   for(let i=2;i<num;i++){
-    if(num %i!=0)
+    if(num % i ===0)
     {
       return false;
       
@@ -55,7 +55,7 @@ function isprime(num){
 }
 function laligetSum(num){
   let sum=0;
-  for(let i=2;i<=num;i++){
+  for(let i=2;i<num;i++){
     if(isprime(i)){
       sum +=i;
     }
