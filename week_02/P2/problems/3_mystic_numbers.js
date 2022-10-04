@@ -15,7 +15,7 @@ function mysticNumbers(max) {
 for(let i = max; i > 0; i--){
   if(i % 4 === 0 && i % 6 != 0 || i % 6 === 0 && i % 4 != 0 ){
     array.push(i);
-    console.log(array);
+    //console.log(array);
   }
 }
 return array;

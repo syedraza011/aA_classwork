@@ -9,12 +9,12 @@ reverseOddRange(10, 20) => [ 19, 17, 15, 13, 11 ]
 reverseOddRange(3, 7) => [ 7, 5, 3 ]
 reverseOddRange(9, 5) => []
 *******************************************************************************/
-let start=10;
-let end=20;
+let start=3;
+let end=7;
 console.log(reverseOddRange(start, end));
 function reverseOddRange(start, end) {
   let array=[];
-  for(let i=end-1;i>start;i--){
+  for(let i=end;i>=start;i--){
     if(i%2 !== 0){
     array.push(i)
     }
