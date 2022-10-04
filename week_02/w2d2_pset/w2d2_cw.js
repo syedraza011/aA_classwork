@@ -30,4 +30,44 @@ function catBuilder(name,color,toys){
   }
 
   //fucntion decompostion and objects
-  
+  //breaking down a problem in several functions
+  // clean code , complexity, managing 
+  //break project in small bits and pieces so it's easy to deal with
+  //example of decomposition of a function
+  //laligetSum(num) and returns the sum of prime numbers to less or equal to "num"
+//lalogetSum(10)=2,3,5,6=17
+//laligetSum(17) 2,3,5,7,11,13,17
+//isprime function
+laligetSum(10);
+laligetSum(17);
+function isprime(num){
+  if(num<2){
+  return false;
+  }
+  for(let i=2;i<num;i++){
+    if(num %i!=0)
+    {
+      return false;
+      
+    }
+  }
+  return true;
+}
+function laligetSum(num){
+  let sum=0;
+  for(let i=2;i<=num;i++){
+    if(isprime(i)){
+      sum +=i;
+    }
+  }
+  return sum;
+}
+
+
+
+
+
+
+
+
+
