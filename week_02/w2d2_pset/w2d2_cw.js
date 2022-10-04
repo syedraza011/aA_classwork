@@ -77,17 +77,26 @@ let cat ={
   name: "whiskers",
   color: "balck",
   toy: {
-  outside:["ball","whistle"],
-  inside:["blanket"]
+    outside:["ball","whistle"],
+    inside:["blanket"]
   }
 }
+
 cat["name"]="jael";
 cat["age"]=21;
 console.log(cat);
 console.log(cat["color"]);
 console.log(cat.name);
-
-
+console.log(cat.age);
+//console.log(cat["inside"]);
+console.log(cat.toy.inside[0]);
+console.log(cat.toy["inside"]);
+console.log(cat.test);
+let test ="name";
+console.log(cat[test]);
+console.log(cat["name"]);
+console.log(cat.test); // property does not exist
+console.log(cat[test]);
 
 
 
