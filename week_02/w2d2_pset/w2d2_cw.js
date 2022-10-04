@@ -64,8 +64,28 @@ function laligetSum(num){
 }
 
 
-
-
+//Objects new topic and important
+//java script data Structure
+//muteable 
+//they have keys and value pair
+// key is always a string
+//a value can be anything
+//keys are uniqe , no repetitive 
+//objects are unorderd where as array are ordered
+//when we have objects
+let cat ={
+  name: "whiskers",
+  color: "balck",
+  toy: {
+  outside:["ball","whistle"],
+  inside:["blanket"]
+  }
+}
+cat["name"]="jael";
+cat["age"]=21;
+console.log(cat);
+console.log(cat["color"]);
+console.log(cat.name);
 
 
 
