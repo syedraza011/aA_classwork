@@ -15,7 +15,7 @@ console.log(reverseOddRange(start, end));
 function reverseOddRange(start, end) {
   let array=[];
   for(let i=end;i>start;i--){
-    if(i%2 != 0){
+    if(i%2 !== 0){
     array.push(i)
     }
   }

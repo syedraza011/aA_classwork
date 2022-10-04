@@ -8,10 +8,16 @@ Examples:
 mysticNumbers(25) => [ 20, 18, 16, 8, 6, 4 ]
 mysticNumbers(14) => [ 8, 6, 4 ]
 *******************************************************************************/
-
+let max=25;
+console.log(mysticNumbers(max));
 function mysticNumbers(max) {
-  // your code here...
+  let array=[];
+for(let i=0;i<max;i++){
+  if(i % 4 === 0 && i % 6 !== 0 || i % 6 === 0 && i % 4 !== 0 ){
+
+  }
 }
 
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = mysticNumbers;
