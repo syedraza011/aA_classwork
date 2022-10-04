@@ -97,6 +97,28 @@ console.log(cat[test]);
 console.log(cat["name"]);
 console.log(cat.test); // property does not exist
 console.log(cat[test]);
+console.log("Looping through objevcts");
+//looping through the objects
+//new Topic
+function printObject(obj){
+  for (let key in obj) {
+    // for in loop
+    console.log(key);
+  }
+
+}
+printObject(cat);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
