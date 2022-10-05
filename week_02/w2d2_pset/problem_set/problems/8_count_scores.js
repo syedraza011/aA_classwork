@@ -40,27 +40,36 @@ var people = [
 console.log(countScores(people));
 function countScores(people) {
   let person='';
-  let newPerson=[];
-  let scores=0;
+  let newPerson={};
+  //let score=0;
   
   //console.log(people.length);
   for(let i=0;i<people.length;i++){
-    person=people[i];
-    scores=people[i].score;
+    // i = 0
+    person = people[i]; // { name: 'anthony', score: 4}
+
+    let score = people[i].score;
     //console.log(person);
-    if(person[0]===people.name){
-      console.log("personal score"+people[i].score);
-      //console.log(person.name)
-      scores=scores+person.score
-      person.score=scores;
-      newPerson.push(person);
-    } 
-    else {
-      //scores +=people[i.score];
-      newPerson.push(person);
+    if(newPerson[person.name] === undefined){
+      newPerson[person.name] = score;      
+    } else {
+      newPerson[person.name] += score; 
     }
+
+    // if(person.name === people[i].name){
+    //   // console.log("personal score"+people[i].score);
+    //   // //console.log(person.name)
+    //   //=score=scores+person.score
+    //   // person.score=scores;
+    //   // newPerson.push(person);
+    // } 
+    // else {
+    //   //scores +=people[i.score];
+    //   newPerson.push(person);
+    // }
     
-  }return newPerson;
+  }
+  return newPerson;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

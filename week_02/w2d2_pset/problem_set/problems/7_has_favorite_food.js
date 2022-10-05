@@ -21,17 +21,19 @@ var person = {
 hasFavoriteFood(person, 'burgers'); // => true
 hasFavoriteFood(person, 'fish'); // => false
 ***********************************************************************/
+let food='chicken';
 let obj = {
   name: 'Fido',
   favoriteFoods: ['chicken', 'sausage', 'scooby snacks']
 };
 console.log(hasFavoriteFood(obj, food));
+
 function hasFavoriteFood(obj, food) {
-if(obj.favoriteFoods.indexOf(food)>-1){
-  return false;
-} else {
-  return true;
-}
+  if(obj.favoriteFoods.indexOf(food)>-1){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

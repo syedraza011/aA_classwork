@@ -17,13 +17,10 @@ let val1;
 let val2;
 console.log(valuePair(obj1, obj2,"location"));
 function valuePair(obj1, obj2, key) {
-    val1=obj1[key]
-    val2=obj2[key]
+    val1=obj1[key];
+    val2=obj2[key];
     return [val1,val2]
-    //for ( let key in valuepair()){
-//array.push(key);
-    //}
-return array;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

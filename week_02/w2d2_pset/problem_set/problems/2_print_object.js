@@ -26,7 +26,7 @@ let obj = {
 function printObject(obj) {
     for (let key in obj) {
         let val =obj[key]
-        console.log(Key +'-'+obj[key])
+        console.log(key +'-'+obj[key])
     }
 }
 

@@ -49,7 +49,8 @@ sumOfNPrimes(4); // => 17
 ***********************************************************************/
 
 function sumOfNPrimes(n) {
-
+let sum=0;
+return sum=sum+n;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
