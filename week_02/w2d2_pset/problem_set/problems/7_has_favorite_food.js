@@ -21,7 +21,11 @@ var person = {
 hasFavoriteFood(person, 'burgers'); // => true
 hasFavoriteFood(person, 'fish'); // => false
 ***********************************************************************/
-
+let dog = {
+  name: 'Fido',
+  favoriteFoods: ['chicken', 'sausage', 'scooby snacks']
+}
+console.log(hasFavoriteFood(obj, food));
 function hasFavoriteFood(obj, food) {
 
 }
