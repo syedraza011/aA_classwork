@@ -30,26 +30,37 @@ countScores(peeps); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
 var people = [
   {name: "Anthony", score: 2},
-  {name: "Winnie", score: 2},
+  {name: "Winnie", score: 3},
   {name: "Fred", score: 2},
-  {name: "Winnie", score: 2},
+  {name: "Winnie", score: 4},
   {name: "Fred", score: 2},
-  {name: "Anthony", score: 2},
-  {name: "Winnie", score: 2}
+  {name: "Anthony", score: 1},
+  {name: "Winnie", score: 6}
 ];
 console.log(countScores(people));
 function countScores(people) {
   let person='';
   let newPerson=[];
   let scores=0;
-console.log(people.length);
-for(let i=0;i<people.length;i++){
-  person=people[i];
-  if(person.name===people.name)
-    scores +=people[score];
-    console.log(person.name,scores)
-    newPerson.push(people.name, scores);
-  }
+  
+  //console.log(people.length);
+  for(let i=0;i<people.length;i++){
+    person=people[i];
+    scores=people[i].score;
+    //console.log(person);
+    if(person[0]===people.name){
+      console.log("personal score"+people[i].score);
+      //console.log(person.name)
+      scores=scores+person.score
+      person.score=scores;
+      newPerson.push(person);
+    } 
+    else {
+      //scores +=people[i.score];
+      newPerson.push(person);
+    }
+    
+  }return newPerson;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
