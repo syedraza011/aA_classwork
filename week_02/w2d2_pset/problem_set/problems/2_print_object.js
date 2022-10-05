@@ -16,10 +16,18 @@ printObject(bootcamp); // prints
 `color - Red`
 `population - 120`
 ***********************************************************************/
-
-
+let obj = {
+    name: 'App Academy',
+    color: 'Red',
+    population: 120,
+   };
+   let str='';
+   printObject(obj);
 function printObject(obj) {
+    for (let key in obj) {
 
+        console.log(obj[key])
+    }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

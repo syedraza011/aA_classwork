@@ -17,7 +17,7 @@ function catBuilder(name, color, toys) {
         color: "balck",
         toy: ['poptarts']
     };
-
+return cat;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
