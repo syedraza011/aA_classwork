@@ -17,9 +17,19 @@ isPrime(1693); // => true
 isPrime(15); // => false
 isPrime(303212); // => false
 ***********************************************************************/
-
+let number=13;
 function isPrime(number) {
-
+if(number <2){
+  return false;
+} 
+for(let i=0;i<number;i++){
+  if(number % i===0){
+    return false;
+  } else {
+    sumOfNPrimes(n)
+  }
+}
+}
 }
 
 /***********************************************************************
