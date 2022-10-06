@@ -18,12 +18,12 @@ function divisibleByThreePairSum(array) {
     for(let i=0;i<array.length;i++){
         let num1=array[i];
         for(let j=i+1;j<array.length;j++){
-            let num2=array[j];
-            if((num1+num2) % 3===0){
-                let pair=[i,j];
-                newArray.push(pair)
-            }
+        let num2=array[j];
+        if((num1+num2) % 3===0){
+        let pair=[i,j];
+        newArray.push(pair)
         }
+    }
     }
 return newArray;
 }

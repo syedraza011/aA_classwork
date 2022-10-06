@@ -12,10 +12,12 @@ HINT: Account for negative difference too!
 // twoDiff([0, 2, 4, 3, 5]) // => [[0, 1], [1, 2], [3,4]]
 // twoDiff([]) // => []
 ***********************************************************************/
-
-
+let array=[2, 3, 4, 6, 1, 7];
+console.log(twoDiff(array));
 function twoDiff(array){
-
+for(let i = 0; i < array.length; i++){
+    for()
+}
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
