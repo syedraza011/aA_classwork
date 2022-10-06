@@ -13,10 +13,20 @@ Note: Assume both arrays have unique elements.
 // array4 = ['d']
 // arrayDiff(array3, array4) // => ['a', 'ab', 'c', 'c']
 ***********************************************************************/
-
-
-function arrayDiff(arr1, arr2){
-  
+arr1 = ["a", "ab", "c", "d", "c"];
+arr2 = ["d"];
+console.log(arrayDiff(arr1, arr2));
+function arrayDiff(arr1, arr2) {
+let newArray = [];
+for (let i = 0; i < arr1.length; i++) {
+    let num1 = arr1[i];
+    for (let j = 0; j < arr2.length; j++) {
+    if (num1 !== arr2[j]) {
+        newArray.push(num1);
+    }
+    }
+}
+return newArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
