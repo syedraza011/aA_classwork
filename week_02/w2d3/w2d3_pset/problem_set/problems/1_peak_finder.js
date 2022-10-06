@@ -14,25 +14,24 @@ peakFinder([2, 1, 2, 3, 4, 5]); //=> [0, 5]
 peakFinder([4, 6, 9, 4, 2, -7, 2, -4, 5]); //=> [2, 6, 8]
 ***********************************************************************/
 //let array=[1, 2, 3, 2, 1];
-let array=[4, 6, 9, 4, 2, -7, 2, -4, 5];
-//let array=[2, 1, 2, 3, 4, 5];
+//let array=[4, 6, 9, 4, 2, -7, 2, -4, 5];
+let array=[2, 1, 2, 3, 4, 5];
 console.log(peakFinder(array));
 function peakFinder(array) {
     let greatest=[];
 for(let i = 0; i < array.length; i++){
-    let peak=array[i];
-    if(peak >array[i+1] || peak > array[i-1]) {
-        greatest.push(array.indexOf(i));
+    //let peak=array[i];
+    if(i===0 && array[i]>array[i+1]) {
+        greatest.push(i);
     }
-    else {
-
+    else if(i===array.length-1 && array[i]>array[i-1]){
+        greatest.push(i);
     }
-    //A peak is an element that is greater than both of its neighbors. 
-    array[i]>array[i+1] && array[i-1];
-    //If it is the first or last element, 
-    //if array[0], array[length-1];
-    //it is a peak if it is greater than its one neighbor.
-    array[0]>array[i+1] || array[array.length-1];
+     else if(array[i]>array[i-1] && array[i]>array[i+1]);
+    {
+        greatest.push(i);
+    }
+    
 }
 return greatest;
 }
