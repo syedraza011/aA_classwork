@@ -15,9 +15,18 @@ HINT: Account for negative difference too!
 let array=[2, 3, 4, 6, 1, 7];
 console.log(twoDiff(array));
 function twoDiff(array){
+    let newArray=[];
 for(let i = 0; i < array.length; i++){
-    for()
+    let num1=array[i];
+    for(let j = i+1; j < array.length; j++){
+        let num2=array[j];
+        if(num1-num2=== 2 ||num2-num1=== 2 ){
+        
+        newArray.push(i,j);
+        }
+    }
 }
+return newArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
