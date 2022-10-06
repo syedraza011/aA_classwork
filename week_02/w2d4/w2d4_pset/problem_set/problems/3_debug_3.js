@@ -23,12 +23,12 @@ function isHappy(person) {
 }
 
 function isHappyGroup(group) {
-  var amount = 0;
+  let amount = 0;
 
   for (var i = 0; i < group.length; i += 1) {
-    var person = group[i];
+    let person = group[i];
 
-    if (idHappy[person]) {
+    if (isHappy(person)) {
       amount += 1;
     }
   }

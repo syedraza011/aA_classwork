@@ -10,7 +10,7 @@ function howHigh(height) {
 }
 
 function jump(height) {
-  return "I'm jumping " + howhigh(height);
+  return "I'm jumping " + howHigh(height);
 }
 
 
