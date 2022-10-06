@@ -15,7 +15,7 @@ function catBuilder(name, color, toys) {
     let cat ={
         name: name,
         color: color,
-        toy: toys
+        toys: toys
     };
 return cat;
 }

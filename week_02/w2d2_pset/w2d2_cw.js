@@ -104,8 +104,8 @@ function printObject(obj){
   for (let key in obj) {
     // for in loop
     console.log(key);
+    console.log(obj[key])
   }
-
 }
 printObject(cat);
 
