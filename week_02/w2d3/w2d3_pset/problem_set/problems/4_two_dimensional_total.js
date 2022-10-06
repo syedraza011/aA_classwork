@@ -17,9 +17,22 @@ var arr2 = [
 
 twoDimensionalTotal(arr2); // => 15
 ***********************************************************************/
-
+array = [
+  [5, 2, 5, 3],
+  [12, 13],
+];
+console.log(twoDimensionalTotal(array));
 function twoDimensionalTotal(array) {
+  let sum=0;
+  for(let i=0; i<array.length;i++){
+    let subArray=array[i];
+    for(let j=0;j<subArray.length;j++){
+      sum =sum+array[i][j];
 
+      console.log("i==="+i+" j====="+j+"    Sum IS====="+sum);
+    }
+  }
+  return sum;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
