@@ -35,47 +35,54 @@ titleize("i LOVE; lover of mine", ["love", "of"])
 titleize("shall we dance?", ["dance"])
 => "Shall We dance?"
 ***********************************************************************/
-let title="forest gump, the runner";
+let title = "forest gump, the runner";
+let stopWords = ["the"];
 
-let stopWords='the'
+console.log(titleize(title, stopWords));
 function titleize(title, stopWords) {
-    let newWords=[];
-    let words=title.split(" ");
-    for(let i = 0;i < words.length; i++){
-        let word=words[i];
-        if(isStopWord(word,stopWords)){
-            let lowerWord=word.toLowerCase();
-                newWords.push(lowerWord);
-        } else {
-            let capWord=capitalized(word);
-            newWords.push(capWord);
-        }
-    }
-
-    return newWords.join(" ");
-    //removePunctuation(word);
-}
-
-function removePunctuation(word){
-    let punctuation=[";", "!", ".", "?", ",", "-"];
-    let lastChar=word[punctuation.length-1];
-    //let newTitle=[];
-    //for()
-
-}
-function capitalized(string){
-    let firstChar=string[0];
-    let everythingElse=string.slice(1);
-    return firstChar.toUpperCase()+ everythingElse.toLowerCase();
-}
-function isStopWord(word, stopWords){
-    if(stopWords.indexOf(word)>-1){
-        return true;
+  let newWords = [];
+  let words = title.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (isStopWord(word, stopWords)) {
+      let lowerWord = word.toLowerCase();
+      newWords.push(lowerWord);
     } else {
-        return false;
+      let capWord = capitalized(word);
+      newWords.push(capWord);
     }
-    
-    
+  }
+
+  return newWords.join(" ");
+  //removePunctuation(word);
+}
+
+function removePunctuation(word) {
+  let punctuation = [";", "!", ".", "?", ",", "-"];
+  let lastChar = word[word.length - 1];
+  if (punctuation.indexOf(lastChar) >-1 ) {
+    return word.slice(0, word.length - 1);
+  } else {
+   
+    return word;
+  }
+}
+function capitalized(string) {
+  let firstChar = string[0];
+  let everythingElse = string.slice(1);
+  return firstChar.toUpperCase() + everythingElse.toLowerCase();
+}
+function isStopWord(word, stopWords) {
+  console.log("Stop words" + stopWords);
+  console.log("word" + word);
+  console.log(stopWords.indexOf(word));
+  let newWord = removePunctuation(word);
+  console.log("new Word----" + newWord);
+  if (stopWords.indexOf(newWord.toLowerCase()) > -1) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

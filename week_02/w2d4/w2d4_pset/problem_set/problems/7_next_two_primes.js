@@ -16,7 +16,7 @@ function nextTwoPrimes(num) {
     let primes=[];
     for(let i=num+1;primes.length <2; i++){
         if(isPrime(i)){
-            primes.push();
+            primes.push(i);
         }
     }
     return primes;
