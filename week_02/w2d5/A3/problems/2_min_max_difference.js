@@ -12,8 +12,17 @@ minMaxDifference([4,2,5,1,-5]) => 10
 let array=[1,2,3,4,5];
 console.log(minMaxDifference(array));
 function minMaxDifference(array){
-  
-
+    let min=array[0];
+    let max=array[0];
+    for(let i=0;i<array.length;i++){
+      if(min > array[i]){
+        min=array[i];
+      }
+      else if (max < array[i]){
+        max=array[i];
+      }
+    }
+return max-min;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
