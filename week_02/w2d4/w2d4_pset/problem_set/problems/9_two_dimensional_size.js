@@ -20,9 +20,22 @@ var arr2 = [
 
 twoDimensionalSize(arr2); // => 5
 ***********************************************************************/
-
+let array = 
+  [
+    ['a'],
+    ['b', 'c', 'd', 'e']
+  ];
+console.log(twoDimensionalSize(array));
 function twoDimensionalSize(array) {
-
+  let eleCounter=0;
+for(let i=0;i<array.length;i++){
+  let subArray=array[i];
+   // eleCounter++;
+  for(let j=0;j<subArray.length;j++){
+      eleCounter++
+  }
+}
+return eleCounter;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

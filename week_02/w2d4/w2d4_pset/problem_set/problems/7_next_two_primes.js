@@ -11,29 +11,29 @@ nextTwoPrimes(20); // => [ 23, 29 ]
 nextTwoPrimes(97); // => [ 101, 103 ]
 ***********************************************************************/
 let num = 8;
+console.log(nextTwoPrimes(num));
+function nextTwoPrimes(num) {
+    let primes=[];
+    for(let i=num+1;primes.length <2; i++){
+        if(isPrime(i)){
+            primes.push();
+        }
+    }
+    return primes;
+}
+
 
 function isPrime(n){
-if(n<2){
+    if(n<2){
     return false;
-}
-for(let i=2;i<num;i++){
-    
-}
-
-}
-}
-function nextTwoPrimes(num) {
-  let i = num;
-  let counter=0;
-  while (counter !== 2) {
-    
-        if (i% 2 !== 0) {
-      console.log(i);
-      counter++;
     }
-    i++;
-  }
-}
+    for(let i=2;i<n;i++){
+        if(n%i===0){
+            return false;
+        }
+    }
+    return true;
 
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = nextTwoPrimes;
