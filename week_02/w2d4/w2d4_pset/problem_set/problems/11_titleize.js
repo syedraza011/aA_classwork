@@ -70,7 +70,7 @@ function capitalized(string){
 }
 function isStopWord(word, stopWords){
     if(stopWords.indexOf(word)>-1){
-        return true 
+        return true;
     } else {
         return false;
     }
