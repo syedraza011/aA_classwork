@@ -15,16 +15,19 @@ let cipher= { a : "c", d : "q"};
 console.log(magicCipher(sentence, cipher));
 function magicCipher(sentence, cipher){
   let newArray=[];
-  let words=sentence.split(" ");
-  for(let i=0;i<words.length;i++){
-    if(cipher[words[i]]===undefined){
-      newArray.push(words[i]);
-    }
-    else {
-      newArray.push(cipher[array[i]]);
+  //let words=sentence.split(""); // ['add,'me','on','facebook']
+  for(let i=0;i<sentence.length;i++){
+    let word=sentence[i];
+    for(let j=0;j<word.length;j++){
+    if(cipher[word[j]]=== undefined){
+        newArray.push(word[j]);
+      }
+        else {
+          newArray.push(cipher[word[j]]);
+        }
     }
   }
-  return newArray.join(" ");
+  return newArray.join("");
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
