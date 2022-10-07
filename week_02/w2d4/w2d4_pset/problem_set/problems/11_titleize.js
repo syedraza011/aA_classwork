@@ -35,9 +35,24 @@ titleize("i LOVE; lover of mine", ["love", "of"])
 titleize("shall we dance?", ["dance"])
 => "Shall We dance?"
 ***********************************************************************/
+let title="forest gump, the runner";
 
+let stopWords='the'
 function titleize(title, stopWords) {
+let word=title.split(" ");
+removePunctuation(word);
+}
 
+function removePunctuation(word){
+    let punctuation=[";", "!", ".", "?", ",", "-"];
+    let lastChar=word[punctuation.length-1];
+    let newTitle=[];
+    for()
+
+}
+function isStopWord(word, stopWords){
+    return true 
+    return false;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
