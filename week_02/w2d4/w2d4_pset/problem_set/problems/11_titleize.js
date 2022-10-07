@@ -39,20 +39,43 @@ let title="forest gump, the runner";
 
 let stopWords='the'
 function titleize(title, stopWords) {
-let word=title.split(" ");
-removePunctuation(word);
+    let newWords=[];
+    let words=title.split(" ");
+    for(let i = 0;i < words.length; i++){
+        let word=words[i];
+        if(isStopWord(word,stopWords)){
+            let lowerWord=word.toLowerCase();
+                newWords.push(lowerWord);
+        } else {
+            let capWord=capitalized(word);
+            newWords.push(capWord);
+        }
+    }
+
+    return newWords.join(" ");
+    //removePunctuation(word);
 }
 
 function removePunctuation(word){
     let punctuation=[";", "!", ".", "?", ",", "-"];
     let lastChar=word[punctuation.length-1];
-    let newTitle=[];
-    for()
+    //let newTitle=[];
+    //for()
 
 }
+function capitalized(string){
+    let firstChar=string[0];
+    let everythingElse=string.slice(1);
+    return firstChar.toUpperCase()+ everythingElse.toLowerCase();
+}
 function isStopWord(word, stopWords){
-    return true 
-    return false;
+    if(stopWords.indexOf(word)>-1){
+        return true 
+    } else {
+        return false;
+    }
+    
+    
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
