@@ -29,7 +29,7 @@ function twoDimensionalTotal(array) {
     for(let j=0;j<subArray.length;j++){
       sum =sum+array[i][j];
 
-      console.log("i==="+i+" j====="+j+"    Sum IS====="+sum);
+      //console.log("i==="+i+" j====="+j+"    Sum IS====="+sum);
     }
   }
   return sum;

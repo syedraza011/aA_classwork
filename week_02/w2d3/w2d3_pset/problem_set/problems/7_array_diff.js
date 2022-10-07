@@ -16,17 +16,26 @@ Note: Assume both arrays have unique elements.
 arr1 = ["a", "ab", "c", "d", "c"];
 arr2 = ["d"];
 console.log(arrayDiff(arr1, arr2));
+array1 = [1,23,2,43,3,4]
+array2 = [3, 23]
+console.log(arrayDiff(array1, array2))
 function arrayDiff(arr1, arr2) {
-let newArray = [];
-for (let i = 0; i < arr1.length; i++) {
+  let newArray = [];
+  
+  for (let i = 0; i < arr1.length; i++) {
+    let flag=false;
     let num1 = arr1[i];
     for (let j = 0; j < arr2.length; j++) {
-    if (num1 !== arr2[j]) {
-        newArray.push(num1);
+      if (num1 === arr2[j]) {
+        flag=true;
+      }
+      
     }
+    if(!flag){
+      newArray.push(num1);
     }
-}
-return newArray;
+  }
+  return newArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
