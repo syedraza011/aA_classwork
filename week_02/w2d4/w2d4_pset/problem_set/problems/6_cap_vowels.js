@@ -12,24 +12,22 @@ capVowels('HELLO WORLD'); // => 'hEllO wOrld'
 capVowels('boOtCamP PreP'); // => 'bOOtcAmp prEp'
 ***********************************************************************/
 let string='hello world';
+let vowels="aeiouAEIOU";
 console.log(capVowels(string)); 
 function capVowels(string) {
-    let newArray=[];
+    let str='';
     let words=string.split(" ");
     for(let i=0;i<string.length;i++){
-        let word=string[i];
-            let char=word.split(" ");
-        for(let j=0;j<word.length;j++){
-            if(char==='e'){
-                char.toUpperCase(char[j]);
-                newArray.push(char);
-            }
-            else{
-                newArray.push(char);
-            }
+        let char=string[i];
+        if(vowels.indexOf(char)>-1){
+        str +=char.toUpperCase(char);
+        
+        }
+        else{
+        str +=char.toLowerCase(char)
         }
     }
-return newArray.join(" ");
+return str;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
