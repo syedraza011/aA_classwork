@@ -16,15 +16,17 @@ let obj={a: 1, b: 2, d: 4}
 console.log(valueReplace(array, obj));
 function valueReplace(array, obj){
   let newArray=[];
-  for(let key in obj){
-    //console.log("KEY"+obj.key);
-    if(obj[key]===undefined){
-     // array[i]=obj[key];
-      
+  //for(let key in obj)
+ for(let i=0;i<array.length;i++) {
+    if(obj[array[i]]===undefined)
+    {
+      newArray.push(array[i]);
     }
-  }
-  newArray.push(obj[key])
-  
+      else{
+        newArray.push(obj[array[i]]);
+      }
+    }
+  return newArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
