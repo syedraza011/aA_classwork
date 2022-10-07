@@ -4,18 +4,16 @@
 //
 // isMagicNumer(26) //=> true;
 // isMagicNumer(50) //=> false;
-
-var magicify = function(number) {
-  console.log(number - 34);
+//let number=26;
+let magicify = function(number) {
+  return console.log(number- 34);
 }
 
-var isMagicNumer = function(number) {
-  var magicNumb = magicify(number);
-
+let isMagicNumer = function(number) {
+  let magicNumb = magicify(number);
   if (magicNumb % 13 === 0 || magicNumb < 0) {
     return true;
   }
-
   return false;
 }
 
