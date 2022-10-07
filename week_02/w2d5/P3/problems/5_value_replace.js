@@ -16,7 +16,7 @@ let obj={a: 1, b: 2, d: 4}
 console.log(valueReplace(array, obj));
 function valueReplace(array, obj){
   let newArray=[];
-  for(let i=0;i<array.length;i++){
+  for(let key in obj){
     //console.log("KEY"+obj.key);
     if(obj[key]===undefined){
      // array[i]=obj[key];
