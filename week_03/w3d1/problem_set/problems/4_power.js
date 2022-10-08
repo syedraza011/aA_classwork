@@ -19,7 +19,13 @@ let base=2;
 let exp=5;
 console.log(power(base, exp));
 function power(base, exp) {
-while(i<=)
+    let power=1;
+    let i=1;
+while(i<=exp){
+    power=power*base;
+    i++;
+}
+return power;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
