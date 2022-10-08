@@ -15,9 +15,11 @@ power(9, 3); // => 729
 power(11, 0); // => 1
 power(11, 1); // => 11
 ***********************************************************************/
-
+let base=2;
+let exp=5;
+console.log(power(base, exp));
 function power(base, exp) {
-
+while(i<=)
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
