@@ -12,22 +12,22 @@ valueConcat(['a', 'b', 'c'], {b: 2, c: 3})
 => [ 'a', 'b2', 'c3' ]
 *******************************************************************************/
 let array=['a', 'b', 'c'];
-let obj={b: 2, c: 3}
-console.log(valueConcat(array, obj));
+let obj={b: 2, c: 3};
+console.log(valueConcat(array, obj))
 function valueConcat(array, obj) {
-  let newArray=[];
-  for(let i=0;i<array.length;i++){
-    let ele=array[i];
-    let value=obj[ele];
-    if(ele===undefined){
+  var newArray = [];
+
+  for (var i = 0; i < array.length; i++) {
+    var ele = array[i];
+    var value = obj[ele];
+    if (value === undefined) {
       newArray.push(ele);
-    } 
-    else {
+    } else {
       newArray.push(ele + value);
     }
-  } 
-return  newArray;
-}
+  }
 
+  return newArray;
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = valueConcat;
