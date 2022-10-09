@@ -11,9 +11,12 @@ valueConcat(['alex', 'maurice', 'meagan', 'ali'], {alex: 'bronca', ali: 'harris'
 valueConcat(['a', 'b', 'c'], {b: 2, c: 3})
 => [ 'a', 'b2', 'c3' ]
 *******************************************************************************/
-
+let array=['a', 'b', 'c'];
+let obj={b: 2, c: 3}
+console.log(valueConcat(array, obj));
 function valueConcat(array, obj) {
-  // your code here...
+  for
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
