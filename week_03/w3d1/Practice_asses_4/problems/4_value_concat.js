@@ -15,8 +15,18 @@ let array=['a', 'b', 'c'];
 let obj={b: 2, c: 3}
 console.log(valueConcat(array, obj));
 function valueConcat(array, obj) {
-  for
-
+  let newArray=[];
+  for(let i=0;i<array.length;i++){
+    let ele=array[i];
+    let value=obj[ele];
+    if(ele===undefined){
+      newArray.push(ele);
+    } 
+    else {
+      newArray.push(ele + value);
+    }
+  } 
+return  newArray;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
