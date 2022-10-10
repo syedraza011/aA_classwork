@@ -12,16 +12,26 @@ longestWord(''); // => ''
 let sentence='hate having hungry hippos';
 console.log(longestWord(sentence));
 function longestWord(sentence) {
-  let words=sentence.split(" ");
-  let word=words[0];
-  console.log(words);
-  for(let i=0;i<words.length;i++){
-      if(word.length< words[i].length){
-      word=words[i];
-    }
-  }
-  return word;
+  let word='';
+  if(sentence.length<1){
 
+    return word;
+  }
+  else{
+    let words=sentence.split(" ");
+    word=words[0];
+    console.log(words);
+    for(let i=0;i<words.length;i++){
+        if(word.length <= words[i].length){
+
+        word=words[i];
+        console.log(word);
+       
+        }
+      }
+      return word;
+    
+}
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

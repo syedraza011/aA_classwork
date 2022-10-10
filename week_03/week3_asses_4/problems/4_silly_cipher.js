@@ -11,21 +11,20 @@ sillyCipher("apple", { a : "c", p : "x"}) //=> 'cxx..'
 sillyCipher("bootcamp prep?", { o : "e", p : "q" , "?" : "!"}) //=> '.ee....q.q..q!'
 sillyCipher("twmce", { m : "n", t : "d", w : "a"}) //=> 'dan..''
 *******************************************************************************/
-let sentence="apple";
-let cipher={ a : "c", p : "x", l : "r", e : "o"};
+let sentence = "twmce";
+let cipher = ;
 console.log(sillyCipher(sentence, cipher));
-function sillyCipher(sentence, cipher){
-  let str='';
-  for(let i=0;i<sentence.length;i++){
-    if(sentence[i]===cipher[key]){
-      console.log(cipher[i]);
-      str +=cipher[i];
-    }
-    else {
-      str +='.';
+function sillyCipher(sentence, cipher) {
+  let str = "";
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] !== cipher[sentence[i]]) {
+     // console.log(cipher[sentence[i]]);
+      str += cipher[sentence[i]];
+    } else {
+      str += +"."; 
     }
   }
-return str;
+  return str;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

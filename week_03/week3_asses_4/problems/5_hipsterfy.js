@@ -10,16 +10,18 @@ hipsterfy("towel flicker banana"); // => "towl flickr banan"
 hipsterfy("runner anaconda"); // => "runnr anacond"
 hipsterfy("turtle cheeseburger fries"); // => "turtl cheeseburgr fris"
 *******************************************************************************/
-let sentence = "proper";
+let sentence = "propr tonc panthr";
 let vowels = "AEIOUaeiou";
 console.log(hipsterfy(sentence))
 function hipsterfy(sentence) {
   for (let i = sentence.length - 1; i >= 0; i--) {
     if (vowels.indexOf(sentence[i]) != -1) {
       let newWord = sentence.slice(0, i) + sentence.slice(i + 1);
-      return newWord;
+      console.llog(newWord);
+      newWord +=newWord;
     }
   }
+  return newWord;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
