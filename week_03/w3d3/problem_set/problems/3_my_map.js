@@ -16,9 +16,23 @@ myMap([2, 4, 6, 1], doubler); // => [ 4, 8, 12, 2 ]
 
 myMap([9, 25, 100, 36, 81], Math.sqrt); // => [ 3, 5, 10, 6, 9 ]
 ***********************************************************************/
-
+let arr=[2, 4, 6, 1];
+myMap([2, 4, 6, 1], doubler);
+function doubler(num) {
+  console.log("Nume"+num)
+  return num * 2;
+}
+myMap([9, 25, 100, 36, 81], Math.sqrt)
+//console.log(myMap(arr, math.sqrt));
+console.log(myMap(arr, doubler));
 function myMap(arr, cb) {
-
+  let array=[];
+for (let i=0;i<arr.length;i++){
+ 
+  array.push(cb(arr[i],i,arr));
+  
+}
+return array;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
