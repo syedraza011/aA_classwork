@@ -10,18 +10,29 @@ hipsterfy("towel flicker banana"); // => "towl flickr banan"
 hipsterfy("runner anaconda"); // => "runnr anacond"
 hipsterfy("turtle cheeseburger fries"); // => "turtl cheeseburgr fris"
 *******************************************************************************/
-let sentence = "propr tonc panthr";
-let vowels = "AEIOUaeiou";
-console.log(hipsterfy(sentence))
+let sentence = "proper tonic panther";
+console.log(hipsterfy(sentence));
 function hipsterfy(sentence) {
-  for (let i = sentence.length - 1; i >= 0; i--) {
-    if (vowels.indexOf(sentence[i]) != -1) {
-      let newWord = sentence.slice(0, i) + sentence.slice(i + 1);
-      console.llog(newWord);
-      newWord +=newWord;
+  let words = sentence.split(" ");
+  let newSent = [];
+  for (let word of words) {
+    newSent.push(removeVowels(word));
+  }
+  return newSent.join(" ");
+}
+
+function removeVowels(word) {
+  // let newWord = "";
+  let vowels = "AEIOUaeiou";
+
+  for (let i = word.length - 1; i >= 0; i--) {
+    if (vowels.includes(word[i])) {
+      return word.slice(0, i) + word.slice(i + 1);
+      // console.log(newWord);
+      // return newWord;
     }
   }
-  return newWord;
+  return word;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
