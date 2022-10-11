@@ -11,12 +11,19 @@ function isEven(num) {
   return num % 2 === 0;
 }
 
-myEvery([10, 4, 8, 20], isEven); // => true
+myEvery([10, 4, 8, 20,13], isEven); // => true
 myEvery([2, 2, 10, 11, 12], isEven); // => false
 ***********************************************************************/
 
+function isEven(num) {
+  return num % 2 === 0;
+}
+myEvery([10, 4, 8, 20,13], isEven);
+//myEvery(arr, cb);
 function myEvery(arr, cb) {
-
+  for(let i=0;i<arr.length;i++){
+    return (cb(arr[i],i,arr));
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

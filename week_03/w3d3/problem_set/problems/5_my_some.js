@@ -14,7 +14,11 @@ mySome([10, -10, 11, 4], isNegative); // => true
 mySome([-10, -10, -11, -4], isNegative); // => true
 mySome([2, 4, 6, 8], isNegative); // => false
 ***********************************************************************/
+function isNegative(num) {
+  return num < 0;
+}
 
+mySome([10, -10, 11, 4], isNegative);
 function mySome(arr, cb) {
 
 }
