@@ -60,4 +60,18 @@ function hOF(fn1,fn2,n){ //fn1 and fn2 are aour call back functions
   fn2();
   n +=1;
   return fn1;
+}console.log(test(fn,a,b));
+function test(fn,a,b){
+console.log(fn(a));
+return fn;
 }
+//high order function predefined by java script
+//<array>.for each 
+//<array>. map
+//<array>.filter 
+let arr=[1,3,5,7,9,11]
+arr.forEach(function(ele,i, arr){ // do not put i as an argument
+  // argument must come after elements
+  ele=ele*2;
+
+})
