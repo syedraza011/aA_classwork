@@ -2,13 +2,28 @@
 //Write a function mostVowels that takes in a
 //sentence string and returns the word of the
 //sentence that contains the most vowels.
-
+console.log(mostVowels("what a wonderful life")); // "wonderful"
 function mostVowels(sentence) {
-  let words = sentence.split(" ");
-  count[word] = 0;
+  let counts={};
+  let largestnum=0;
+  let largestword='';
+  let words=sentence.split(" ");
+  for(let i=0;i<words.length;i++){
+      let word=words[i];
+      counts[word]= countVowels(word);
+  }
+  for( let key in counts)
+  {
+    
+    if(counts[key] > largestnum)
+    {
+      largestnum=counts[key];
+      largestword= key;
+    }
+  }
+return largestword;
 }
-let word = "wonderful";
-console.log(countVowels(word));
+
 function countVowels(word) {
   let vowels = "aeiouAEIOU";
   let count = 0;
@@ -20,4 +35,4 @@ function countVowels(word) {
   return count;
 }
 
-console.log(mostVowels("what a wonderful life")); // "wonderful"
+//console.log(mostVowels("what a wonderful life")); // "wonderful"
