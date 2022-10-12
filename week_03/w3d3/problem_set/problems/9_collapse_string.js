@@ -9,9 +9,22 @@ collapseString('apple'); //=> 'aple'
 collapseString('AAAaalviiiiin!!!'); //=> 'Aalvin!'
 collapseString('hello   app academy'); //=> 'helo ap academy'
 ***********************************************************************/
-
+console.log(collapseString('AAAaalviiiiin!!!'));
 function collapseString(str) {
+    let string='';
+    for(let i=0;i<str.length;i++){
+        let char=str[i];
+        let char1=str[i+1];
+        if(char===char1){
+        // string +=str.slice(char);
+            
 
+        }
+        else{
+            string +=char;
+        }
+    }
+return str;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

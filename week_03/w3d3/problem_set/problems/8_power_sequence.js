@@ -19,8 +19,14 @@ console.log(powerSequence(3, 4));
 console.log(powerSequence(2, 6));
 console.log(powerSequence(8, 3));
 function powerSequence(base, length) {
-for(let )
+    let square=1;
+    let newArray=[];
+for(let i=0;i<length;i++){
+  newArray.push(square=square*base);
 }
+return newArray;
+}
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = powerSequence;
