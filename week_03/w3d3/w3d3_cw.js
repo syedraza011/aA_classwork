@@ -79,10 +79,36 @@ arr.forEach(function(ele,i, arr){ // do not put i as an argument
 //map pre defined function 
 let names=['alice','bob','carol']; //[5,3,5]//length of each word
 names.map(function(ele,i){
-ele= ele.length;
+return ele.length;
 })
 //when we map no mutation but would return new array 
 //for each -are mutation  
 //strings['a','bb','ccc']
 //string.lengths [1,2,3];
 //integars [1,2,-1,0]=> transforms to negation[-1,-2,1,0]
+//using maps;
+let nums=[5,8,9,12,15,3];
+let array=nums.map(function(ele,i){
+  return ele*i;
+})
+console.log(array);
+
+let num1=[1,2,3,4,5];
+let ar=num1.map(function(ele,i){
+
+  return 0;
+})
+console.log(ar);
+
+let arr1=['alice','bob','carol'];
+let a=arr1.map(function(ele,i){
+
+  return ele+ele;
+})
+console.log(a);
+const myfunc = (n) =>{
+  return (n+n)
+}
+console.log(arr1.map(x => myfunc(x))) //alternate function writing for maping
+
+//function myfunc(n){}
