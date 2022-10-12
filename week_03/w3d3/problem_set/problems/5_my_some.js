@@ -18,9 +18,16 @@ function isNegative(num) {
   return num < 0;
 }
 
-mySome([10, -10, 11, 4], isNegative);
+console.log(mySome([10, -10, 11, 4], isNegative));
 function mySome(arr, cb) {
-
+  for(let i=0;i<arr.length;i++){
+    if(cb(arr[i]===true)){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
