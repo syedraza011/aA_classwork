@@ -11,3 +11,9 @@ function circleArea(radius){
   let area= Math.PI*Math.sqrt(radius*radius);
   return Math.floor(area);
 }
+let num=4;
+console.log(weirdSqrt(num));
+function weirdSqrt(num){
+  return Math.round((Math.sqrt(num)*Math.PI));
+  
+}
