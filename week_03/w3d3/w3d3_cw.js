@@ -49,3 +49,15 @@ function example(foo){
   }
   return innerExample(); // would return undefined
 }
+
+//call back Function 
+//A call back function is a function that is passed
+// as an argument to another function 
+
+//console.log( hOF(fn1,fn2,n));
+function hOF(fn1,fn2,n){ //fn1 and fn2 are aour call back functions
+  fn1();
+  fn2();
+  n +=1;
+  return fn1;
+}
