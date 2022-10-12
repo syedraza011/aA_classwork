@@ -17,3 +17,35 @@ function weirdSqrt(num){
   return Math.round((Math.sqrt(num)*Math.PI));
   
 }
+// Higher order function
+// a function that takes other function as arguments
+//returns function
+function foo(){
+  console.log("foo");
+}
+console.log(bar(foo));
+function bar(foo){
+  foo();
+  return foo;
+}
+let n=2;
+console.log(myfunc(n));
+function myfunc(n){
+  n +=1;
+}
+
+function myfunc(n){ //n= number not a function 
+  n +=1;
+  function myInnerFunc(){
+    console.log("hello");
+  }
+  return myInnerFunc; // never invoke a function with function () sign
+}
+console.log(example(foo));
+function example(foo){
+  foo();
+  function innerExample(){
+    console.log("Example");
+  }
+  return innerExample(); // would return undefined
+}
