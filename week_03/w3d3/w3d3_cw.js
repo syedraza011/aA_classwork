@@ -76,4 +76,13 @@ arr.forEach(function(ele,i, arr){ // do not put i as an argument
   ele=ele*2;
 
 })
-
+//map pre defined function 
+let names=['alice','bob','carol']; //[5,3,5]//length of each word
+names.map(function(ele,i){
+ele= ele.length;
+})
+//when we map no mutation but would return new array 
+//for each -are mutation  
+//strings['a','bb','ccc']
+//string.lengths [1,2,3];
+//integars [1,2,-1,0]=> transforms to negation[-1,-2,1,0]
