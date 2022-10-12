@@ -20,7 +20,7 @@ function weirdSqrt(num){
 // Higher order function
 // a function that takes other function as arguments
 //returns function
-function foo(){
+/*function foo(){
   console.log("foo");
 }
 console.log(bar(foo));
@@ -64,14 +64,16 @@ function hOF(fn1,fn2,n){ //fn1 and fn2 are aour call back functions
 function test(fn,a,b){
 console.log(fn(a));
 return fn;
-}
+}*/
 //high order function predefined by java script
 //<array>.for each 
 //<array>. map
 //<array>.filter 
 let arr=[1,3,5,7,9,11]
 arr.forEach(function(ele,i, arr){ // do not put i as an argument
+  //1st-argument is going to be element , 2nd -Index, 3rd-array itself
   // argument must come after elements
   ele=ele*2;
 
 })
+
