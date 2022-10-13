@@ -4,14 +4,20 @@ vowels='aeiouAEIOU'
 console.log(vowelCipher("bootcamp")); // "buutcemp"
 console.log(vowelCipher("paper cup")); // "pepir cap"
 function vowelCipher(string) {
-    let newChar='';
+    let newString='';
     for(let i=0;i<string.length;i++){
         let char=string[i];
-        let oldIdx=vowels.indexOf(char);
-       let  newIdx= oldIdx+1
-        let newChar = vowels[newIdx % vowels.length];
+        if(vowels.includes(char)){
+            let oldIdx=vowels.indexOf(char);
+            let  newIdx= oldIdx+1;
+            let newChar = vowels[newIdx % vowels.length];
+            newString +=newChar;
+            
+        } else {
+            newString +=char;
+        }
     }
-    return newChar;
+    return newString;
 }
 
 
