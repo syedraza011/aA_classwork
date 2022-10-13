@@ -112,3 +112,22 @@ const myfunc = (n) =>{
 console.log(arr1.map(x => myfunc(x))) //alternate function writing for maping
 
 //function myfunc(n){}
+// <array>.filter //pre defined function 
+//even
+let arra=[0,1,2,3,4,5];
+let ray=arra.filter(function(ele,i){
+  return ele %2===0;
+})
+console.log(ray);
+//odds
+let arraa=[0,1,2,3,4,5];
+let rayy=arra.filter(function(ele,i){
+  return ele %2 !==0;
+})
+console.log(rayy);
+
+let char=['aa','b','c'];
+let nChar=char.filter(function(ele,i){
+  return ele.length===1;
+})
+console.log(nChar);
