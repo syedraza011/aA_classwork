@@ -7,15 +7,20 @@
 //At any point, to generate the next element of the sequence 
 //we take the summation of the previous element. 
 //You can assume that length is not zero.
-console.log(summationSequence(1,3));
+console.log(summationSequence(1,6));
 function summationSequence(start, length) {
     let sumArray=[];
-    let sum=0;
     for(let i=start;i<=length;i++){
-        console.log(i)
-
-        sum=i+i;
-        sumArray.push(sum);
+    sumArray.push(summation(i));
     }
     return sumArray;
+}
+function summation(number){
+    let sum=0;
+    for(let i=1;i<=number;i++){
+        //console.log(i)
+
+        sum =sum+i;
+    }
+    return sum;
 }
