@@ -9,7 +9,6 @@ console.log(fibonacci(1)); // [1]
 console.log(fibonacci(6)); // [1, 1, 2, 3, 5, 8]
 console.log(fibonacci(8)); // [1, 1, 2, 3, 5, 8, 13, 21]
 function fibonacci(length) {
-    let array=[];
     if(length===0){
         return array;
     }
@@ -18,7 +17,6 @@ function fibonacci(length) {
         return array;
     }
     let seq =[1,1];
-    
     while (seq.length < length) {
         let last = seq[seq.length - 1];
         let secondToLast = seq[seq.length - 2];
