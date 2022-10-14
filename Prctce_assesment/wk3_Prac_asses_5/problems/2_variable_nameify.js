@@ -9,9 +9,11 @@ variableNameify(['is', 'prime']) => 'isPrime'
 variableNameify(['remove', 'last', 'vowel']) => 'removeLastVowel'
 variableNameify(['MaX', 'VALUE']) => 'maxValue'
 *******************************************************************************/
-
+console.log(variableNameify(['is', 'prime']))// => 'isPrime'
+console.log(variableNameify(['remove', 'last', 'vowel']))// => 'removeLastVowel'
+console.log(variableNameify(['MaX', 'VALUE']))// => 'maxValue'
 function variableNameify(words) {
-  // your code here...
+  
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
