@@ -17,20 +17,30 @@ function double(n) {
 var array2 = [12, 9, 20, 13, 14];
 minValueCallback(array2, double); // => 18
 *******************************************************************************/
-let array1 = [-2, -7, 0, 8];
-console.log(minValueCallback(array1, Math.abs)); // => 7
+let array1 = [12, 9, 20, 13, 14];
+console.log(minValueCallback(array1,double)); // => 7
 function minValueCallback(array, cb) {
-  if(cb)
+  let number=0;
+  let min=array[0];
   for(let i=0;i<array.length;i++){
-    let ele=array[i]
+    let num=array[i];
+    if(num>min){
+      min=num;
+      
+    }
     
   }
-  return cb(ele);
+  if(cb(min)){
+    return min;
+  } else {
+    return null;
+  }
+  //return number;
 }
+
 function double(n) {
   return n * 2
 }
-
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = minValueCallback;
