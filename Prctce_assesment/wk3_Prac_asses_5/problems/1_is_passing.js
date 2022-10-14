@@ -37,10 +37,24 @@ let assessments2 = [
   {number: 2, score: 20},
   {number: 3, score: 45}
 ];
+
 console.log(isPassing(assessments1));//=> true
 console.log(isPassing(assessments2));//=> false
 function isPassing(assessments) {
-  for (let key in assessments)
+  let score=0;
+  let avgScore=0;
+  for (let i=0;i<assessments.length;i++){
+    let assessment=assessments[i]
+    //console.log(assessment['score']);
+    score=(score + assessment['score']);
+    avgScore=score/assessments.length;
+    //console.log("Scores"+avgScore)
+  }
+  if(avgScore >= 70){
+  return true
+  } else {
+    return false;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
