@@ -30,11 +30,25 @@ Note that in the example above, the `printHalf` callback function only
 expects a single parameter. If we try to pass more than one parameter to
 the function, it will ignore the extras. `printHalf(10, 'what?', false)`
 will print 5.
+myForEach([10, 50, 120], printHalf); // prints
+5
+25
+60
 ***********************************************************************/
 //call Back function
 //
-function myForEach(array, cb) {
 
+myForEach([10, 50, 120], printHalf); // prints
+5
+25
+60
+function myForEach(array, cb) {
+  let newArray=[];
+for(let i=0;i<array.lenght;i++){
+  let ele=array[i];
+  newArray.push(cb(ele));
+}
+return newArray
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

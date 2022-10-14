@@ -15,16 +15,13 @@ function collapseString(str) {
     for(let i=0;i<str.length;i++){
         let char=str[i];
         let char1=str[i+1];
-        if(char===char1){
-        // string +=str.slice(char);
-            
-
-        }
-        else{
+        if(char !==string[string.length-1]){
+        
             string +=char;
         }
+        
     }
-return str;
+return string;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

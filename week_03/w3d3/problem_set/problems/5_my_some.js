@@ -15,19 +15,22 @@ mySome([-10, -10, -11, -4], isNegative); // => true
 mySome([2, 4, 6, 8], isNegative); // => false
 ***********************************************************************/
 function isNegative(num) {
-  return num < 0;
+  if(num < 0){
+    return true;
+  } else {
+    return false;
+  }
 }
 
 console.log(mySome([10, -10, 11, 4], isNegative));
 function mySome(arr, cb) {
   for(let i=0;i<arr.length;i++){
-    if(cb(arr[i]===true)){
+    if(cb(arr[i])){
       return true;
-    } else {
-      return false;
-    }
+    } 
+      
   }
-  
+  return  false;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

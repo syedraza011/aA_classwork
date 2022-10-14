@@ -16,14 +16,26 @@ myEvery([2, 2, 10, 11, 12], isEven); // => false
 ***********************************************************************/
 
 function isEven(num) {
-  return num % 2 === 0;
+  //console.log("Hello ISeven"+num)
+  if( num % 2 === 0){
+    //console.log("returnung True bro")
+    return true;
+  } else {
+    return false;
+  }
 }
-myEvery([10, 4, 8, 20,13], isEven);
-//myEvery(arr, cb);
+console.log(myEvery([2, 2, 10, 11, 12], isEven)); // => false
+console.log(myEvery([10, 4, 8, 20,13], isEven));
+
 function myEvery(arr, cb) {
   for(let i=0;i<arr.length;i++){
-    return (cb(arr[i],i,arr));
+      let ele=arr[i]
+    if(cb(ele)===false){
+      return false;
+    }
   }
+  return true;
+  
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
