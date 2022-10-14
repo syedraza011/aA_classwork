@@ -34,7 +34,10 @@ console.log(reverse2D(arr2)); //=> 'PatrickOscarMikeMattJulian'
 function reverse2D(array) {
   let str='';
   for(let i=array.length-1;i>=0;i--){
-      str +=array[i]
+      let word=array[i];
+      for(let j=word.length-1;j>=0;j--){
+        str +=word[j]
+      }
   }
   return str;
 }
