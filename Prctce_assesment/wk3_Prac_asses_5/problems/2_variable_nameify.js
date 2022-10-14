@@ -13,7 +13,13 @@ console.log(variableNameify(['is', 'prime']))// => 'isPrime'
 console.log(variableNameify(['remove', 'last', 'vowel']))// => 'removeLastVowel'
 console.log(variableNameify(['MaX', 'VALUE']))// => 'maxValue'
 function variableNameify(words) {
-  
+  let name='';
+  for(let i=0;i<words.length;i++){
+    let word=words[i];
+    let firstCap=word.toUpperCase();
+    name=words[0]+firstCap;
+  }
+  return name;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

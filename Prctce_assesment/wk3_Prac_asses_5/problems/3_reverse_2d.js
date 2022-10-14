@@ -20,9 +20,23 @@ var arr2 = [
 reverse2D(arr2) => 'PatrickOscarMikeMattJulian'
 
 *******************************************************************************/
-
+let arr1 = [
+  ['a', 'b', 'c', 'd'],
+  ['e', 'f'],
+  ['g', 'h', 'i']
+];
+let arr2 = [
+  ['Julian', 'Matt', 'Mike'],
+  ['Oscar', 'Patrick']
+];
+console.log(reverse2D(arr1)); //=> 'ihgfedcba'
+console.log(reverse2D(arr2)); //=> 'PatrickOscarMikeMattJulian'
 function reverse2D(array) {
-  // your code here...
+  let str='';
+  for(let i=array.length-1;i>=0;i--){
+      str +=array[i]
+  }
+  return str;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
