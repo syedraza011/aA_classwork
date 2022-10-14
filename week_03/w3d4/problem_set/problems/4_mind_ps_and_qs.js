@@ -18,9 +18,25 @@ mindPsAndQs('PQPQ'); // => 4
 mindPsAndQs('PPPXQPPPQ'); // => 5
 ***********************************************************************/
 
-
+console.log(mindPsAndQs('BOOTCAMP')); // => 1
+console.log(mindPsAndQs('APCDQQPPC')); // => 4
+console.log(mindPsAndQs('PQPQ')); // => 4
+console.log(mindPsAndQs('PPPXQPPPQ')); // => 5
 function mindPsAndQs(str) {
-
+        let currentStrk=0;
+        let longest=0;
+    for(let i=0;i<str.length;i++){
+        let char=str[i];
+        if(char==='P' || char ==='Q'){
+            currentStrk ++;
+            if(currentStrk >longest){
+                longest=currentStrk;
+            }
+        } else {
+            currentStrk=0;
+        }
+    }
+    return longest;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
