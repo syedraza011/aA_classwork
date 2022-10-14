@@ -13,17 +13,17 @@ console.log(variableNameify(["is", "prime"])); // => 'isPrime'
 console.log(variableNameify(["remove", "last", "vowel"])); // => 'removeLastVowel'
 console.log(variableNameify(["MaX", "VALUE"])); // => 'maxValue'
 function variableNameify(words) {
-  let variName = " ";
+  let obtained = "";
   for (let i = 0; i < words.length; i++) {
     let word = words[i];
     if (i === 0) {
-      variName += word.toLowerCase();
+      obtained += word.toLowerCase();
     } else {
       let caped = word[0].toUpperCase() + word.slice(1).toLowerCase();
-      variName += caped;
+      obtained += caped;
     }
   }
-  return variName;
+  return obtained;
 }
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = variableNameify;
