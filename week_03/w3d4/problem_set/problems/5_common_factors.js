@@ -10,7 +10,10 @@ commonFactors(6, 24); // => [ 1, 2, 3, 6 ]
 commonFactors(11, 22); // => [ 1, 11 ]
 commonFactors(45, 60); // => [ 1, 3, 5, 15 ]
 ***********************************************************************/
-
+commonFactors(12, 50); // => [ 1, 2 ]
+commonFactors(6, 24); // => [ 1, 2, 3, 6 ]
+commonFactors(11, 22); // => [ 1, 11 ]
+commonFactors(45, 60); // => [ 1, 3, 5, 15 ]
 function commonFactors(num1, num2) {
 
 }
