@@ -8,9 +8,10 @@ Examples:
 greaterCallback(25, Math.abs, Math.sqrt) => 25
 greaterCallback(16.6, Math.floor, Math.ceil) => 17
 *******************************************************************************/
-
+console.log(greaterCallback(25, Math.abs, Math.sqrt)); //=> 25
+console.log(greaterCallback(16.6, Math.floor, Math.ceil));// => 17
 function greaterCallback(num, cb1, cb2) {
-  // your code here...
+  cb1()
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
