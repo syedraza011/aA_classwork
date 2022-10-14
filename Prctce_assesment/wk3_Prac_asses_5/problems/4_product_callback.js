@@ -8,9 +8,11 @@ Examples:
 productCallback(-2, 6, Math.abs) // => 12
 productCallback(12, 3, Math.sqrt) // => 6
 *******************************************************************************/
-
+console.log(productCallback(-2, 6, Math.abs)); // => 12
+console.log(productCallback(12, 3, Math.sqrt)); // => 6
 function productCallback(num1, num2, cb) {
-  // your code here...
+  let mul=num1*num2;
+  return cb(mul);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
