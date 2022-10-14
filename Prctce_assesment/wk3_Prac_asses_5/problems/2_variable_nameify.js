@@ -16,11 +16,22 @@ function variableNameify(words) {
   let name='';
   for(let i=0;i<words.length;i++){
     let word=words[i];
-    let firstCap=word.toUpperCase();
-    name=words[0]+firstCap;
+    
+    name=words[0]+firstCap+newWord;
   }
   return name;
 }
-
+function firstCap(word){
+  let capedWord=' ';
+  for(let i=0;i<word.length;i++){
+    let char=word[i];
+    if(word[0]){
+      capedWord +=char.toUpperCase;
+    } else {
+      capedWord +=char
+    }
+  }
+  return capedWord;
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = variableNameify;
