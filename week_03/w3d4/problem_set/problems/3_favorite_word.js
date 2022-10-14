@@ -16,15 +16,15 @@ console.log(favoriteWord('a', 'sinful caesar sipped his snifter'));//=> 'caesar'
 console.log(favoriteWord('s', 'sinful caesar sipped his snifter')); //=> 'sinful'
 console.log(favoriteWord('x', 'sinful caesar sipped his snifter')); //=> '')
 function favoriteWord(favoriteLetter, sentence) {
-   let words=sentence.split(' ');
-   let fav=' ';
-   for(let i=0;i<words.length;i++){
+    let words=sentence.split(' ');
+    let fav='';
+    for(let i=0;i<words.length;i++){
     let word=words[i];
     if(letterCount(fav,favoriteLetter) < letterCount(word,favoriteLetter)){
         fav=word;
     }
-   }
-   return fav;
+    }
+    return fav;
 }
 function letterCount(word,char){
     let count=0;
