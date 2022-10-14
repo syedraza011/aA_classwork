@@ -21,8 +21,8 @@ function signFlipCount(numbers) {
   let count = 0;
   for (let i = 0; i < numbers.length; i++) {
     let num = numbers[i];
-    let num1 = number[i + 1];
-    return;
+    let num1 = numbers[i + 1];
+    
     if ((num < 0 && num1 > 0) || (num > 0 && num1 < 0)) {
       count++;
     }

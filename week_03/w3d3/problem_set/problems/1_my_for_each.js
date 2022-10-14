@@ -37,16 +37,19 @@ myForEach([10, 50, 120], printHalf); // prints
 ***********************************************************************/
 //call Back function
 //
+function printHalf(num) {
+  //console.log(num)
+  return (num / 2);
+}
+console.log(myForEach([100, 500, 1000], printHalf));
+console.log(myForEach([10, 50, 120], printHalf)); // prints
 
-myForEach([10, 50, 120], printHalf); // prints
-5
-25
-60
 function myForEach(array, cb) {
   let newArray=[];
-for(let i=0;i<array.lenght;i++){
+for(let i=0;i<array.length;i++){
   let ele=array[i];
-  newArray.push(cb(ele));
+  let newEle=cb(ele,i,array);
+  newArray.push(newEle);
 }
 return newArray
 }
