@@ -17,9 +17,18 @@ function double(n) {
 var array2 = [12, 9, 20, 13, 14];
 minValueCallback(array2, double); // => 18
 *******************************************************************************/
-
+let array1 = [-2, -7, 0, 8];
+console.log(minValueCallback(array1, Math.abs)); // => 7
 function minValueCallback(array, cb) {
-  // your code here...
+  if(cb)
+  for(let i=0;i<array.length;i++){
+    let ele=array[i]
+    
+  }
+  return cb(ele);
+}
+function double(n) {
+  return n * 2
 }
 
 

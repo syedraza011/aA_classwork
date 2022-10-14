@@ -19,9 +19,17 @@ var arr2 = [
 ];
 sum2DArray(arr2); // => 3
 *******************************************************************************/
-
+let arr2 = [[-10, 2, 3], [1], [10, -5], [2]];
+console.log(sum2DArray(arr2)); // => 3
 function sum2DArray(array) {
-  // your code here...
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    let subarray = array[i];
+    for (let j = 0; j < subarray.length; j++) {
+      sum = sum + array[i][j];
+    }
+  }
+  return sum;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
