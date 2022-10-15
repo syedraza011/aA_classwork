@@ -23,33 +23,24 @@ var students = [
 ];
 console.log(highestScore(students));
 function highestScore(students) {
-    let highestScore=;
+    let highestScore=0;
+    let great='';
+    let stud='';
 for(let i=0;i<students.length;i++){
-
-}
-
-
-  // let str='';
-  // //students= array of objects
-  // //want to return initialstid of student with highest
-  // let max=0;
-  // let answer='';
-  // // for (let student of student) //diferent loops
-  // // for(let studen in student)// loops in objects
-  // for(let i=0;i<students.length;i++){
-  //   let student=students[i];
+  let student=students[i];
+    if(highestScore<student.score){
+    highestScore=student.score;
+    stud=student;
     
-  //   if(student.score>max){
-  //     max=student.score;
-  //     answer=student;
-  //   }
+  } 
+}
+let names=stud.name.split(" ");
+ let final = names[0][0]+names[1][0]+stud.id
+    great +=final;
 
-  // }
-  // // assign th names to get entity
-  // //let names=max.name
-  // return 
-  // console.log(answer)
-  // //return str;
+return great;
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
