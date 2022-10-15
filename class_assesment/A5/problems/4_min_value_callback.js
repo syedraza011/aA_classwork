@@ -18,28 +18,24 @@ var array2 = [12, 9, 20, 13, 14];
 minValueCallback(array2, double); // => 18
 *******************************************************************************/
 let array1 = [12, 9, 20, 13, 14];
-console.log(minValueCallback(array1,double)); // => 7
+console.log(minValueCallback(array1, double)); // => 7
 function minValueCallback(array, cb) {
-  let number=0;
-  let min=array[0];
-  for(let i=0;i<array.length;i++){
-    let num=array[i];
-    if(num>min){
-      min=num;
-      
+  //let number=0;
+  let min = array[0];
+  if (array.length < 1) {
+    return cb(null);
+  }
+  for (let i = 0; i < array.length; i++) {
+    let num = array[i];
+    if (num < min) {
+      min = num;
     }
-    
   }
-  if(cb(min)){
-    return min;
-  } else {
-    return null;
-  }
-  //return number;
+  return cb(min);
 }
 
 function double(n) {
-  return n * 2
+  return n * 2;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
