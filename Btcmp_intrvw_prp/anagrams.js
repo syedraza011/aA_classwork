@@ -8,17 +8,20 @@ console.log(anagrams("cat", "dog"));          // false
 console.log(anagrams("boot", "bootcamp"));    // false
 function anagrams(word1, word2) {
     let str='';
-    if(word1.length !==word2){
+    if(word1.length !==word2.length){
         return false;
     }
     else {
-    for(let i=0;i<word1;i++){
-        let char=word1[i];
-        if(word2.includes(char)){
-            str +=char;
-        }
+    let sortedWord1=word1.split("").sort().join(" ").toLowerCase();
+    let sortedWord2=word2.split("").sort().join(" ").toLowerCase();
+    if(sortedWord1===sortedWord2){
+        return true;
     }
-    return str;
+    else{
+        return false;
+    }
+    }
+    
 }
-}
+
 
