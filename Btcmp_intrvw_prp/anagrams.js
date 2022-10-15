@@ -7,6 +7,8 @@ console.log(anagrams("restful", "fluster"));  // true
 console.log(anagrams("cat", "dog"));          // false
 console.log(anagrams("boot", "bootcamp"));    // false
 function anagrams(word1, word2) {
+   /************************************************* 
+     //solution 1
     let str='';
     if(word1.length !==word2.length){
         return false;
@@ -23,5 +25,5 @@ function anagrams(word1, word2) {
     }
     
 }
-
+*/
 
