@@ -6,13 +6,26 @@ console.log(pyramidSum([1, 4, 6])); // [[15], [5, 10], [1, 4, 6]]
 console.log(pyramidSum([3, 7, 2, 11])); // [[41], [19, 22], [10, 9, 13], [3, 7, 2, 11]]
 function pyramidSum(base) {
     let pyramid1=[base];
-    for(let i=0;i<base.length;i++){
-        if(i<base.length-1){
-            
-            pyramid1.push(base[i]+base[i+1]);
-        }
-}
-//pyramidSum(pyramid1);
+   
+    while(pyramid1.length<base.length){
         
-console.log(pyramid1)
+        let prevLevel = pyramid1[0];
+        //console.log("prevLevel"+prevLevel)
+        let nextLevel = adjacentSum(prevLevel);
+        //console.log("prevLevel"+nextLevel)
+        pyramid1.unshift(nextLevel);
+        
+    }
+
+return pyramid1;
+}
+function adjacentSum(array){
+    let pyramid=[];
+    for(let i=0;i<array.length;i++){
+        if(i<array.length-1){
+            
+            pyramid.push(array[i]+array[i+1]);
+        }
+    } 
+    return pyramid;
 }
