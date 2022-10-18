@@ -11,10 +11,39 @@ Examples:
 laligatArray([10, 11, 20, 15]); // => [ 17, 28, 77, 41 ]
 laligatArray([1, 2, 3, 4, 5]); // => [ 0, 2, 5, 5, 10 ]
 *******************************************************************************/
-
+console.log(laligatArray([11]));
 function laligatArray(array) {
-  // your code here...
+    let arr = [];
+    for (let i = 1; i < array.length; i++) {
+        let num = array[i];
+        for (let i = 1; i <= num; i++) {
+            if (isPrime(i)){
+              console.log(" "+i+" ")
+              sum= sum+i;
+              console.log("î-----"+sum)
+            }
+        
+    }
+    return arr;
 }
+function isPrime(n)
+{
+	
+	if (n === 1 || n === 0){
+		return false;
+
+  }
+	for (let i = 2; i < n; i++) {
+		
+		if (n % i === 0){
+			return false;
+    }
+	}
+	return true;
+}
+
+      
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = laligatArray;
