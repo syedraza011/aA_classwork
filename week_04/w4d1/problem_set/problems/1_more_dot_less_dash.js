@@ -15,8 +15,32 @@ console.log(moreDotLessDash('.-.-.')); // => true
 console.log(moreDotLessDash('.-')); // => false
 console.log(moreDotLessDash('..--')); // => false
 function moreDotLessDash(str) {
-
+    let flag;
+    let string=str.split(" ").join("");
+    for(let i=0;i<string.length;i++){
+      //  console.log("----"+string[i])
+        flag=counter(string[i]);
+    }
+    return flag;
 }
-
+function counter(char){
+   // console.log("chars____"+char)
+    let dotCount=0;
+    let dashCount=0;
+    let dot='.';
+    let dash='-';
+    if(char==='.'){
+        dotCount++;
+    }
+    if(char==='-'){
+        dashCount++;
+    }
+    if(dotCount>dashCount){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = moreDotLessDash;

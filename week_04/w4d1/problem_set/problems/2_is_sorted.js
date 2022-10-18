@@ -10,10 +10,19 @@ isSorted([3, 5, 11, 13, 15, 16]); // => true
 isSorted([9, 4, 1, 5, 6, 2]); // => false
 isSorted([1, 2, 4, 5, 6, 9]); // => true
 ***********************************************************************/
-
+console.log(isSorted([3, 5, 11, 9, 15, 16])); // => false
+console.log(isSorted([3, 5, 11, 13, 15, 16])); // => true
+console.log(isSorted([9, 4, 1, 5, 6, 2])); // => false
+console.log(isSorted([1, 2, 4, 5, 6, 9])); // => true
 function isSorted(array) {
-
+    for(let i=0;i<array.length;i++){
+        let num1=array[i];
+        let num2=array[i+1];
+        if(num1>num2){
+                return false;
+        }
+    }
+    return true;
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = isSorted;
