@@ -65,3 +65,14 @@ function factorial (num){
   }
   return (num *factorial(num-1));
 }
+
+//power in recursive 
+let base=2;
+let exp=4;
+console.log("Power values----> "+power(base,exp));
+function power(base,exp){
+  if(exp===0) {
+    return 1;
+  }
+  return base*power(base,exp-1)
+}
