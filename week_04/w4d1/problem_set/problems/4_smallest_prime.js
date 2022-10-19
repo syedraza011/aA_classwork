@@ -27,10 +27,10 @@ var arr2 = [11, -7, 7, 8, 6, 10];
 console.log(smallestPrime(arr2)); // => 7
 
 var arr3 = [];
-//console.log(smallestPrime(arr3)); // => null
+console.log(smallestPrime(arr3)); // => null
 
 var arr4 = [4, 6, 8, 10];
-//console.log(smallestPrime(arr4)); // => null
+console.log(smallestPrime(arr4)); // => null
 function smallestPrime(array) {
   let smallest = null;
 //   if (array.length < 1) {
@@ -40,7 +40,7 @@ function smallestPrime(array) {
     let num = array[i];
     if (isPrime(num) && (num < smallest || smallest === null)) {
       smallest = num;
-      console.log("Smallest" + smallest);
+      //console.log("Smallest" + smallest);
     }
   }
   return smallest;

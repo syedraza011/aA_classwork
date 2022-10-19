@@ -11,7 +11,10 @@ canConstruct("a", "aa");              // => true
 canConstruct("ababc", "dbaccab");     // => true
 canConstruct("aabbc", "aaaabbbdef");  // => false
 ***********************************************************************/
-
+console.log(canConstruct("a", "b"));               // => false
+console.log(canConstruct("a", "aa"));              // => true
+console.log(canConstruct("ababc", "dbaccab"));     // => true
+console.log(canConstruct("aabbc", "aaaabbbdef"));  // => false
 function canConstruct(ransomNote, magazine) {
 
 }
