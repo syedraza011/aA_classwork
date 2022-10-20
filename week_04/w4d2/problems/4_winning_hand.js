@@ -15,24 +15,33 @@ winningHand('KJKJ', 'QQQK'); // => 'QQQK'
 winningHand('JKJJ', 'QQJJ'); // => 'DRAW'
 winningHand('KJKJ', 'QQQQ'); // => 'DRAW'
 ***********************************************************************/
-console.log(winningHand('JQKJ', 'QQJJ')); // => 'JQKJ'
+console.log(winningHand('JQKJ', 'QQJJ')); // => 'JQKJ' //7
 console.log(winningHand('KJKJ', 'QQQK')); // => 'QQQK'
 console.log(winningHand('JKJJ', 'QQJJ')); // => 'DRAW'
 console.log(winningHand('KJKJ', 'QQQQ')); // => 'DRAW'
 function winningHand(hand1, hand2) {
-let score={
-    j:1,
-    q:2,
-    k:3
-};
-for(let char in score){
-    console.log(score[char]);
+    let count1=handScore(hand1);
+    let count2=handScore(hand2);
+    console.log(count1)
+    console.log(count2)
+    if(count1>count2){
+        return hand1;
+    }
+    if(count1===count2){
+        return 'DRAW';
+    } else {
+        return hand2;
+    }
 }
-for(let i=0;i<hand1.length;i++){
-if(let hand1[i] in score){
-    score[i].includes()
-}
-}
+function handScore(string){
+    let score=0;
+    let value={J:1,Q:2,K:3};
+
+    for(let i=0;i<string.length;i++){
+        let card=string[i];
+        score +=value[card];
+    }
+    return score;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
