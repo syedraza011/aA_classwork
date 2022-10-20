@@ -21,9 +21,15 @@ done!
 countUp(20); // prints
 done!
 ***********************************************************************/
-
+console.log(countUp(3));
 function countUp(num) {
+    
+if(num =>10){
+    return "Done!"
+}
+let number=countUp(num+1);
 
+return number;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
