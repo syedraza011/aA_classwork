@@ -14,9 +14,25 @@ uncompressString('a2b4c1'); // => 'aabbbbc'
 uncompressString('b1o2t1'); // => 'boot'
 uncompressString('x3y1x2z4'); // => 'xxxyxxzzzz'
 ***********************************************************************/
-
+console.log(uncompressString('a2b4c1')); // => 'aabbbbc'
+console.log(uncompressString('b1o2t1')); // => 'boot'
+console.log(uncompressString('x3y1x2z4')); // => 'xxxyxxzzzz'
 function uncompressString(str) {
-
+    let string='';
+    for(let i=0;i<str.length;i++){
+        
+        let char=str[i];
+        let num=str[i+1];
+        string +=extracted(char,num)
+    }
+    return string;
+}
+function extracted(char,num){
+    let str='';
+    for(let i=0;i<num;i++){
+        str +=char;
+    }
+    return str;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
