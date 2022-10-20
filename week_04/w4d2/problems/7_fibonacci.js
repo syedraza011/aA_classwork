@@ -19,9 +19,24 @@ fibonacci(3); // => [ 1, 1, 2 ]
 fibonacci(5); // => [ 1, 1, 2, 3, 5 ]
 fibonacci(10); // => [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
 ***********************************************************************/
-
+console.log(fibonacci(3)); // => [ 1, 1, 2 ]
+console.log(fibonacci(5)); // => [ 1, 1, 2, 3, 5 ]
 function fibonacci(n) {
-
+    let arr=[];
+    if(n===0){
+    return [];
+}
+if(n===1){
+    return [1];
+}
+let seq=[1,1];
+for(i=2;i<n;i++){
+    let old=seq[seq.length-1];
+    let pOld=seq[seq.length-2];
+    let next=old+pOld;
+seq.push(next);
+}
+return seq;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

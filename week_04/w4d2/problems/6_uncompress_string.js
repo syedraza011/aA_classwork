@@ -20,7 +20,6 @@ console.log(uncompressString('x3y1x2z4')); // => 'xxxyxxzzzz'
 function uncompressString(str) {
     let string='';
     for(let i=0;i<str.length;i++){
-        
         let char=str[i];
         let num=str[i+1];
         string +=extracted(char,num)
