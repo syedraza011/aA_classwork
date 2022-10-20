@@ -18,15 +18,14 @@ console.log(greatestCommonFactor(4, 7)); // => 1
 console.log(greatestCommonFactor(4, 8)); // => 4
 console.log(greatestCommonFactor(45, 30)); // => 15
 function greatestCommonFactor(num1, num2) {
-  let lDivisor = 0;
+ 
   let num = num2;
   if (num1 < num2) {
     let num = num1;
   } 
-  for (let i = num; i => num; i--) {
+  for (let i = num; i => 0; i--) {
     if(num1 % i===0 && num2 %i===0){
-            lDivisor = i;
-            return lDivisor;
+        return i;
     }
 }
 
