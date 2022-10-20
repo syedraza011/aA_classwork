@@ -16,10 +16,25 @@ longestLetterStreak("YACCADCA", ["C", "A"]); // => 4
 longestLetterStreak("ZTKZQRKKZ", ["Z", "K", "Y"]); // => 3
 longestLetterStreak("YYYYY", ["Z", "K", "Y"]); // => 5
 *******************************************************************************/
-
+console.log(longestLetterStreak("ACCA", ["C"])); // => 2
+console.log(longestLetterStreak("YACCADCA", ["C", "A"])); // => 4
+console.log(longestLetterStreak("ZTKZQRKKZ", ["Z", "K", "Y"])); // => 3
+console.log(longestLetterStreak("YYYYY", ["Z", "K", "Y"])); // => 5
 function longestLetterStreak(str, searchLetters) {
-  // your code here...
-
+for(let i=0;i<str.length;i++){
+  let char=str[i];
+  searchChar(char,searchLetters);
+}
+}
+function searchChar(char,searchLetters){
+  let obj={};
+  if(searchLetters.indexOf(char)>-1){
+    obj[char] =char;
+  } else {
+     obj[char] +=1;
+  }
+  console.log(obj);
+  return obj;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
