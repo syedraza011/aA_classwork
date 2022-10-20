@@ -25,5 +25,6 @@ for(let i=0;i<words.length;i++){
 return string;
 }
 
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = alternateCase;
