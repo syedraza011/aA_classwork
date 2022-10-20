@@ -21,10 +21,24 @@ console.log(longestLetterStreak("YACCADCA", ["C", "A"])); // => 4
 console.log(longestLetterStreak("ZTKZQRKKZ", ["Z", "K", "Y"])); // => 3
 console.log(longestLetterStreak("YYYYY", ["Z", "K", "Y"])); // => 5
 function longestLetterStreak(str, searchLetters) {
-for(let i=0;i<str.length;i++){
-  let char=str[i];
-  for(let)
-}
+  let maxCount = 0;
+  let preCounter = 0;
+  let currentCounter = 0;
+  for (let i = 0; i < str.length; i++) {
+      let char = str[i];
+    if (searchLetters.includes(char)) {
+     // console.log("Current--> "+currentCounter);
+      currentCounter++;
+    }
+    else {
+      currentCounter=0;
+    }
+    if (maxCount < currentCounter) {
+      maxCount = currentCounter;
+    }
 
+  }
+return maxCount;
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = longestLetterStreak;
