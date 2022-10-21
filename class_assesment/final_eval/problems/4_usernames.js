@@ -15,9 +15,17 @@ usernames(names); // => [ 'oalvarez', 'dcatalano', 'kozuna', 'mhaws' ]
 
 Difficulty: Medium
 *************************************************************************************/
-
+console.log(usernames(names)); // => [ 'oalvarez', 'dcatalano', 'kozuna', 'mhaws' ]
+var names = [
+  'Oscar Alvarez',
+  'Danny Catalano',
+  'Kurstie Ozuna',
+  'Matt Haws'
+];
 function usernames(names) {
-
+for(let i=0;i<names.length;i++){
+  console.log(names[i])
+}
 }
 
 /******************** DO NOT MODIFY ANYTHING UNDER THIS LINE *************************/
