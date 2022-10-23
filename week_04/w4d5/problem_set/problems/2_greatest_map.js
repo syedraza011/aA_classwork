@@ -25,7 +25,9 @@ Hint:
 (squareRootRounder(10); //=> 3
 ***********************************************************************/
 
-
+console.log(squareRootRounder(1)); //=> 1
+console.log(squareRootRounder(5); //=> 2
+console.log(squareRootRounder(10); //=> 3
 function greatestMap(array, cb1, cb2) {
 
 }
