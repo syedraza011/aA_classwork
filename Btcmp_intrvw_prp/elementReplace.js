@@ -12,4 +12,12 @@ arr2 = ["dog", "cat", "mouse"];
 obj2 = { dog: "bark", cat: "meow", duck: "quack" };
 
 element_replace(arr2, obj2); // ["bark", "meow", "mouse"]
-function element_replace(array, obj) {}
+function element_replace(array, obj) {
+let result = [];
+        for (key in obj) {
+            result.push(key[obj]);
+            arr = result;
+        }
+        return result;
+    }
+
