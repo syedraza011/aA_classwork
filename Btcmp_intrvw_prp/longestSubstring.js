@@ -13,6 +13,23 @@ Output: 3
 Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 */
+// let sentence = "abcabcbb";
+// console.log(longestSubString(sentence));
+//console.log(longestSubString("bbbbb"));
+console.log(longestSubString("pwwkew")); //kew //3
 function longestSubString(sentence){
-
+    let longest='';
+    for(let i=0;i<sentence.length;i++){
+        let char=sentence[i];
+        if(char !==sentence[i+1] && char!==sentence[i-1]){
+            if(!longest.includes(char)){
+                longest +=char;
+            } 
+        }else {
+            longest='';
+        }
+    }
+    console.log("longest--->"+longest)
+    return longest.length;
+        
 }

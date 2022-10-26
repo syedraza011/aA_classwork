@@ -6,7 +6,7 @@
 arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"];
 obj1 = { "Serena Williams": "tennis", "LeBron James": "basketball" };
 
-element_replace(arr1, obj11); // ["basketball", "Lionel Messi", "tennis"]
+element_replace(arr1, obj1); // ["basketball", "Lionel Messi", "tennis"]
 
 arr2 = ["dog", "cat", "mouse"];
 obj2 = { dog: "bark", cat: "meow", duck: "quack" };
