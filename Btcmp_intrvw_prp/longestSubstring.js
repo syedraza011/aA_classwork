@@ -15,8 +15,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 */
 // let sentence = "abcabcbb";
 // console.log(longestSubString(sentence));
-//console.log(longestSubString("bbbbb"));
-console.log(longestSubString("pwwkew")); //kew //3
+console.log(longestSubString("abcabcbb"));
+//console.log(longestSubString("pwwkew")); //kew //3
 function longestSubString(sentence){
     let longest='';
     for(let i=0;i<sentence.length;i++){
@@ -26,7 +26,9 @@ function longestSubString(sentence){
                 longest +=char;
             } 
         }else {
+            let prev=longest;
             longest='';
+            console.log("Prev-->"+prev)
         }
     }
     console.log("longest--->"+longest)
