@@ -11,7 +11,19 @@ function mystring(string){
   console.log(table)
 }
 */
+/*
 
+FUNCTION elementReplace(arr, obj)
+  result <- []
+  FOR elemKey in arr DO:
+     IF elemKey is a key of obj THEN:
+       push obj[elemKey] to result
+     ELSE:
+       push elemKey to result
+     END IF
+  END FOR
+END FUNCTION
+*/
 // Element Replace
 // Write a method element_replace that takes in an array and an object.
 //  The method should return a new array where elements of the original
@@ -19,8 +31,41 @@ function mystring(string){
 
 arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"];
 obj1 = { "Serena Williams": "tennis", "LeBron James": "basketball" };
+arr2 = ["dog", "cat", "mouse"]
+obj2 = {"dog": "bark", "cat": "meow", "duck": "quack"}
+//console.log(element_replace(arr2, obj2)); //  ["bark", "meow", "mouse"]
+console.log(element_replace(arr1, obj1)); // ["basketball", "Lionel Messi", "tennis"]
+function element_replace(arr, obj){
+  let newArray=[];
+  for(let i=0;i<arr.length;i++){
+    let word=arr[i];
+    //console.log("word----> "+word);
+    
+    if(obj[word]===word){
+      newArray.push(obj[key]);
+    } else {
+      newArray.push(word);
+    }
+    
+    
+    // for(let key in obj){
+    //   let _obj=key;
+    //   //console.log("Before if----> "+_obj);
+    //   if(key.includes(word)){
+    //    // console.log("inside if----> "+_obj);
+    //    //newArray.push(word)
+    //    newArray.push(obj[key]);
+    //   } else {
+        
+    //     //break;
+    //   }
+    //   //}
 
-element_replace(arr1, obj1); // ["basketball", "Lionel Messi", "tennis"]
-function element_replace(arr1, obj1){
-
+      
+    // }
+    // //newArray.push(word)
+    
+  }
+  
+  return newArray;
 }
