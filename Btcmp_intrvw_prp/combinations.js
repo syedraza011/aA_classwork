@@ -6,3 +6,5 @@
 
 // combinations([0, 1, 2, 3]); // [ [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 1, 2 ], [ 1, 3 ], [ 2, 3 ] ]
 
+An ice cream shop offers customers the choice of a cup or a cone. It offers a choice of three different flavors: chocolate, vanilla, or strawberry. It also offers three different toppings: sprinkles, nuts, or hot fudge.
+
