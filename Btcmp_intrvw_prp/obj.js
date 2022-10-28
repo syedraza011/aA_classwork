@@ -33,39 +33,29 @@ arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"];
 obj1 = { "Serena Williams": "tennis", "LeBron James": "basketball" };
 arr2 = ["dog", "cat", "mouse"]
 obj2 = {"dog": "bark", "cat": "meow", "duck": "quack"}
-//console.log(element_replace(arr2, obj2)); //  ["bark", "meow", "mouse"]
-console.log(element_replace(arr1, obj1)); // ["basketball", "Lionel Messi", "tennis"]
+console.log(element_replace(arr2, obj2)); //  ["bark", "meow", "mouse"]
+//console.log(element_replace(arr1, obj1)); // ["basketball", "Lionel Messi", "tennis"]
 function element_replace(arr, obj){
   let newArray=[];
   for(let i=0;i<arr.length;i++){
     let word=arr[i];
-    //console.log("word----> "+word);
-    
-    if(obj[word]===word){
-      newArray.push(obj[key]);
+    if(replaced(obj,word) !==''){
+      newArray.push(replaced(obj,word));
     } else {
       newArray.push(word);
     }
-    
-    
-    // for(let key in obj){
-    //   let _obj=key;
-    //   //console.log("Before if----> "+_obj);
-    //   if(key.includes(word)){
-    //    // console.log("inside if----> "+_obj);
-    //    //newArray.push(word)
-    //    newArray.push(obj[key]);
-    //   } else {
-        
-    //     //break;
-    //   }
-    //   //}
-
-      
-    // }
-    // //newArray.push(word)
-    
   }
   
   return newArray;
 }
+function replaced(obj,word){
+  let newWord='';
+  for(let key in obj){
+    if(key.includes(word)){
+      
+      newWord +=obj[key];
+    } 
+    
+  }
+    return newWord;
+  }
