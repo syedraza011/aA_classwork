@@ -49,3 +49,4 @@ function anagrams(word1, word2)
     }
     return true;
 }
+

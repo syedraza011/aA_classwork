@@ -5,19 +5,29 @@
 
 arr1 = ["LeBron James", "Lionel Messi", "Serena Williams"];
 obj1 = { "Serena Williams": "tennis", "LeBron James": "basketball" };
-
-element_replace(arr1, obj1); // ["basketball", "Lionel Messi", "tennis"]
-
 arr2 = ["dog", "cat", "mouse"];
 obj2 = { dog: "bark", cat: "meow", duck: "quack" };
-
-element_replace(arr2, obj2); // ["bark", "meow", "mouse"]
-function element_replace(array, obj) {
-let result = [];
-        for (key in obj) {
-            result.push(key[obj]);
-            arr = result;
-        }
-        return result;
+console.log(element_replace(arr2, obj2)); //  ["bark", "meow", "mouse"]
+//console.log(element_replace(arr1, obj1)); // ["basketball", "Lionel Messi", "tennis"]
+function element_replace(arr, obj) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    let word = arr[i];
+    if (replaced(obj, word) !== "") {
+      newArray.push(replaced(obj, word));
+    } else {
+      newArray.push(word);
     }
+  }
 
+  return newArray;
+}
+function replaced(obj, word) {
+  let newWord = "";
+  for (let key in obj) {
+    if (key.includes(word)) {
+      newWord += obj[key];
+    }
+  }
+  return newWord;
+}
