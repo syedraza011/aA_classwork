@@ -22,6 +22,8 @@
 // Output: -1
 // Explanation:
 // There is no index that satisfies the conditions in the problem statement.
-function pivotIndex =(nums) {
-    
+let nums = [1,7,3,6,5,6] // Output: 3
+console.log(pivotIndex(nums));
+function pivotIndex(nums) {
+
 };
